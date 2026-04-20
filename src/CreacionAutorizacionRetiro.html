@@ -56,6 +56,7 @@
 </head>
 <body class="selection:text-white selection:bg-primary">
 
+	<!-- DE AQUI  -->
     <!-- Preloader start  -->
     <div id="preloader" class="bg-white dark:bg-[#242424] p-0 m-0 h-full fixed z-[99999] w-full flex items-center justify-center">
 		<div class="lds-ripple inline-block relative w-20 h-20">
@@ -89,13 +90,13 @@
                 <nav class="navbar navbar-expand">
                     <div class="navbar-collapse justify-between">
                        <ul class="navbar-nav header-right flex flex-row h-full">
-							
 							<li class="nav-item dropdown notification_dropdown flex justify-center relative">
 								  <a class="nav-link relative p-[0.8375rem] text-[#464a53] text-lg leading-[1] block duration-500 bell dz-fullscreen"  href="javascript:void(0);">
 									 <svg id="icon-full" viewBox="0 0 24 24" width="20" height="20" stroke="white" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3" style="stroke-dasharray: 37, 57; stroke-dashoffset: 0;"></path></svg>
 									 <svg id="icon-minimize" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-minimize"><path d="M8 3v3a2 2 0 0 1-2 2H3m18 0h-3a2 2 0 0 1-2-2V3m0 18v-3a2 2 0 0 1 2-2h3M3 16h3a2 2 0 0 1 2 2v3" style="stroke-dasharray: 37, 57; stroke-dashoffset: 0;"></path></svg>
 								  </a>
 							</li>	
+							
 							<li class="nav-item pl-4 flex justify-center relative">
 								<div class="dropdown header-profile2">
 									<a data-dz-dropdown="DzinfoDropdown" class="dz-dropdown nav-link relative p-2 text-[#464a53] text-lg leading-[1] block duration-500" href="javascript:void(0);" role="button" data-bs-toggle="dropdown">
@@ -248,7 +249,7 @@
 							<span class="nav-text">Gestión de Grupos</span>
 						</a>
 					</li>
-					<li><a href="project.html">
+					<li><a href="reports.html">
 						<div class="menu-icon">
 							<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path fill-rule="evenodd" clip-rule="evenodd" d="M13.5096 2.53165H7.41104C5.50437 2.52432 3.94146 4.04415 3.89654 5.9499V15.7701C3.85437 17.7071 5.38979 19.3121 7.32671 19.3552C7.35512 19.3552 7.38262 19.3561 7.41104 19.3552H14.7343C16.6538 19.2773 18.1663 17.6915 18.1525 15.7701V7.36798L13.5096 2.53165Z" stroke="#888888" stroke-linecap="round" stroke-linejoin="round"/>
@@ -278,7 +279,7 @@
                             <li><a href="ListadoNoticias.html">Noticias</a></li>
                         </ul>
                     </li>
-					<li><a href="Presupuesto.html">
+					<li><a href="blog-1.html">
 						<div class="menu-icon">
 							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path fill-rule="evenodd" clip-rule="evenodd" d="M16.334 2.75012H7.665C4.644 2.75012 2.75 4.88912 2.75 7.91612V16.0841C2.75 19.1111 4.635 21.2501 7.665 21.2501H16.333C19.364 21.2501 21.25 19.1111 21.25 16.0841V7.91612C21.25 4.88912 19.364 2.75012 16.334 2.75012Z" stroke="#888888" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -312,31 +313,169 @@
 			</div>
         </div>		
         <!-- Sidebar end -->
+		
 
-		<!-- Content body start -->
+
+
+
+		<!-- AQUI COMIENZA SU CODIGO-->
 
 		<div class="content-body">
+			<!-- row -->	
+			
+            <div class="container-fluid">
+				
+                <!-- row -->
+                <div class="row">
+                    <div class="w-full">
+                        <div class="card">
+                            <div class="card-header flex flex-wrap justify-between items-center sm:p-5 sm:pt-6 p-4 pt-5 max-sm:pb-5 relative border-b border-[#E6E6E6] dark:border-[#444444]">
+                                <h4 class="card-title capitalize">Autorización de Retiro del Infante</h4>
+                            </div>
+                            <div class="sm:p-5 p-4">
+                                <div class="form-validation">
+                                    <form class="needs-validation" novalidate >
+                                        <div class="row">
+                                            <div class="xl:w-1/2">
 
-			<!-- HERO / BANNER -->
-			<div class="zentillal-hero">
-				<div class="zentillal-overlay">
-					<h1>Centro Infantil de Zentillal</h1>
-					<p>Formando el futuro con amor, educación y valores</p>
-				</div>
-			</div>
+												<div class="mb-4 row">
+                                                    
+                                                    <div class="basic-dropdown">
+														<label class="lg:w-1/3 py-[7px] text-body-color text-sm" for="validationCustom01">Infante
+                                                        	<span class="text-danger">*</span>
+                                                    	</label>
+														<div class="dropdown">
+															<button type="button" class="dz-dropdown dropdown-toggle py-[0.719rem] px-[1.563rem] max-xl:py-2.5 max-xl:px-4 border border-primary text-white bg-primary text-[15px] max-xl:text-[13px] duration-500 hover:bg-hover-primary focus:bg-hover-primary hover:border-hover-primary rounded-md" data-dz-dropdown="dropdown-1">
+																Infantes asociados
+															</button>
+															<div class="dz-dropdown-menu absolute rounded-md min-w-[10rem] z-[9] translate-y-[0.2rem] shadow-[0_0_3.125rem_0_rgba(82,63,105,0.15)] overflow-hidden bg-white dark:bg-[#242424] dark:shadow-[0rem_0rem_0rem_0.0625rem_rgba(255,255,255,0.1)] py-2 hidden" id="dropdown-1">
+																<a class="dropdown-item py-2 px-5 text-body-color text-[13px] text-left block w-full whitespace-nowrap hover:bg-[#f8f9fa] hover:text-primary dark:bg-transparent dark:text-white" href="javascript:void(0);">Nicolas Mora</a>
+																<a class="dropdown-item py-2 px-5 text-body-color text-[13px] text-left block w-full whitespace-nowrap hover:bg-[#f8f9fa] hover:text-primary dark:bg-transparent dark:text-white" href="javascript:void(0);">Maria Gomez</a>
+																<a class="dropdown-item py-2 px-5 text-body-color text-[13px] text-left block w-full whitespace-nowrap hover:bg-[#f8f9fa] hover:text-primary dark:bg-transparent dark:text-white" href="javascript:void(0);">Juan Perez</a>
+															</div>
+														</div>
+													</div>
+                                                </div>
+												
+                                                <div class="mb-4 row">
+                                                    <label class="lg:w-1/3 py-[7px] text-body-color text-sm" for="validationCustom01">Nombre de la persona que retira al infante
+                                                        <span class="text-danger">*</span>
+                                                    </label>
+                                                    <div class="lg:w-2/3">
+														<input type="text" class="form-control relative text-[13px] text-body-color h-[2.813rem] border border-b-color block rounded-md py-1.5 px-3 duration-500 focus:border-primary dark:hover:border-b-color outline-none w-full" id="validationCustom01"  placeholder="Nombre de la persona que retira al infante" required>
+														<div class="invalid-feedback hidden w-full mt-1 text-xs text-danger">
+															Por favor, ingrese un nombre de la persona que retira al infante.
+														</div>
+                                                    </div>
+                                                </div>
+                                                <div class="mb-4 row">
+                                                    <label class="lg:w-1/3 py-[7px] text-body-color text-sm" for="validationCustom02">Palabra clave (Ingrese una palabra secreta que debera indicar al llegar a retirar al infante)<span
+                                                            class="text-danger">*</span>
+                                                    </label>
+                                                    <div class="lg:w-2/3">
+                                                        <input type="text" class="form-control relative text-[13px] text-body-color h-[2.813rem] border border-b-color block rounded-md py-1.5 px-3 duration-500 focus:border-primary dark:hover:border-b-color outline-none w-full" id="validationCustom02"  placeholder="Ingrese una palabra clave..." required>
+														<div class="invalid-feedback hidden w-full mt-1 text-xs text-danger">
+															Por favor, ingrese una palabra clave.
+														</div>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="mb-4 row">
+                                                    <label class="lg:w-1/3 py-[7px] text-body-color text-sm" for="validationCustom04">Motivo de retiro del infante <span
+                                                            class="text-danger">*</span>
+                                                    </label>
+                                                    <div class="lg:w-2/3">
+                                                        <textarea class="form-control relative text-[13px] h-auto min-h-auto border border-b-color block rounded-md p-3 duration-500 focus:border-primary dark:hover:border-b-color outline-none w-full resize-y" id="validationCustom04"  rows="5" placeholder="Porque motivo desea retirar al infante?" required></textarea>
+														<div class="invalid-feedback hidden w-full mt-1 text-xs text-danger">
+															Por favor, ingrese el motivo de retiro.
+														</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+											
 
-			<!-- CONTENIDO INFERIOR -->
-			<div class="zentillal-info">
-				<h2>Bienvenido al sistema</h2>
-				<p>
-					Te encuentras dentro del sistema del Centro Infantil Zentillal, donde podrás acceder a todas las herramientas necesarias para la gestión educativa.
-					Aquí encontrarás opciones de utilidad como administración de estudiantes, control académico, reportes y mucho más, todo en un solo lugar.
-				</p>
-			</div>
 
-		</div>
+											<!-- FECHA DE RECOLECCIÓN -->
+											<div class="mb-4 row">
+												<label class="lg:w-2/3 py-[7px] text-body-color text-sm" for="pickupDate">
+													Fecha en que se autorizó el retiro del infante
+													<span class="text-danger">*</span>
+												</label>
+												<div class="lg:w-2/3">
+													<input type="date"
+														class="form-control relative text-[13px] text-body-color h-[2.813rem] border border-b-color block rounded-md py-1.5 px-3 duration-500 focus:border-primary dark:hover:border-b-color outline-none w-full"
+														id="pickupDate" required>
+													<div class="invalid-feedback hidden w-full mt-1 text-xs text-danger">
+														Por favor, seleccione una fecha.
+													</div>
+												</div>
+											</div>
 
-         <!-- Content body end -->
+											<!-- HORA DE RECOLECCIÓN -->
+											<div class="mb-4 row">
+												<label class="lg:w-2/3 py-[7px] text-body-color text-sm" for="pickupTime">
+													Hora en que se autorizó el retiro del infante
+													<span class="text-danger">*</span>
+												</label>
+												<div class="lg:w-2/3">
+													<input type="time"
+														class="form-control relative text-[13px] text-body-color h-[2.813rem] border border-b-color block rounded-md py-1.5 px-3 duration-500 focus:border-primary dark:hover:border-b-color outline-none w-full"
+														id="pickupTime" required>
+													<div class="invalid-feedback hidden w-full mt-1 text-xs text-danger">
+														Por favor, seleccione una hora.
+													</div>
+												</div>
+											</div>
+
+
+											<div class="card z-auto">
+												<div class="card-header flex flex-wrap justify-between items-center sm:p-5 sm:pt-6 p-4 pt-5 max-sm:pb-5 relative border-b border-[#E6E6E6] dark:border-[#444444]">
+													<h4 class="card-title capitalize">Cédula de la persona que retira al infante</h4>
+												</div>
+												<div class="sm:p-5 p-4">
+													<div class="mb-4">
+													<label for="formFile" class="form-label text-body-color dark:text-white">Seleccionar archivo</label>
+													<input class="relative text-[13px] h-[2.813rem] dark:file:bg-[#1E1E1E] file:h-[2.813rem] file:outline-none file:text-body-color file:py-[0.175rem] file:pl-2.5 file:pr-3 file:bg-[#f8f9fa] border border-b-color file:border-b-color block rounded-md text-body-color duration-500 focus:border-primary dark:hover:border-b-color outline-none w-full" type="file" id="formFile">
+													</div>
+												</div>
+											</div>
+
+                                            <div class="xl:w-1/2">
+                                                <div class="mb-4 row">
+                                                    <label class="lg:w-1/3 py-[7px] text-body-color text-sm"><a
+                                                            href="javascript:void()">Confirmación</a> <span
+                                                            class="text-danger">*</span>
+                                                    </label>
+                                                    <div class="lg:w-2/3">
+                                                        <div class="form-check leading-normal block min-h-[1.3125rem] pl-[1.5em] mb-2">
+														  <input class="form-check-input" type="checkbox" value="" id="validationCustom12" required>
+														  <label class="mt-[5px] text-body-color ml-[0.3125rem]" for="validationCustom12">
+															Confirmo que he leído y acepto los terminos y requisitos para la autorización de retiro del infante
+														  </label>
+														</div>
+                                                    </div>
+                                                </div>
+                                                <div class="mb-4 row">
+                                                    <div class="lg:w-2/3 ml-auto">
+                                                        <button type="submit" class="inline-block rounded font-medium text-[15px] max-xl:text-xs leading-5 py-[0.719rem] max-xl:px-4 px-[1.563rem] max-xl:py-2.5 border border-primary text-white bg-primary hover:bg-hover-primary hover:border-hover-primary duration-300">Enviar</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <!-- AQUI TERMINA SU CODIGO-->
+
+
+
 
         <!-- Footer start -->
         <div class="footer dark:bg-[#242424] mt-4 border-t border-[#E6E6E6] dark:border-[#444444] text-[13px] font-normal">
@@ -345,8 +484,6 @@
             </div>
         </div>
         <!-- Footer end -->
-
-
 	</div>
     <!-- Main wrapper end -->
 
@@ -374,7 +511,6 @@
 
 	<script  src="assets/js/deznav-init.js"></script>
 	<script  src="assets/js/custom.js"></script>
-	
 	
 </body>
 </html>

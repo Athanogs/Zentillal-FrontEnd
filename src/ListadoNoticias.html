@@ -56,6 +56,7 @@
 </head>
 <body class="selection:text-white selection:bg-primary">
 
+	<!-- DE AQUI  -->
     <!-- Preloader start  -->
     <div id="preloader" class="bg-white dark:bg-[#242424] p-0 m-0 h-full fixed z-[99999] w-full flex items-center justify-center">
 		<div class="lds-ripple inline-block relative w-20 h-20">
@@ -89,13 +90,13 @@
                 <nav class="navbar navbar-expand">
                     <div class="navbar-collapse justify-between">
                        <ul class="navbar-nav header-right flex flex-row h-full">
-							
 							<li class="nav-item dropdown notification_dropdown flex justify-center relative">
 								  <a class="nav-link relative p-[0.8375rem] text-[#464a53] text-lg leading-[1] block duration-500 bell dz-fullscreen"  href="javascript:void(0);">
 									 <svg id="icon-full" viewBox="0 0 24 24" width="20" height="20" stroke="white" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3" style="stroke-dasharray: 37, 57; stroke-dashoffset: 0;"></path></svg>
 									 <svg id="icon-minimize" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-minimize"><path d="M8 3v3a2 2 0 0 1-2 2H3m18 0h-3a2 2 0 0 1-2-2V3m0 18v-3a2 2 0 0 1 2-2h3M3 16h3a2 2 0 0 1 2 2v3" style="stroke-dasharray: 37, 57; stroke-dashoffset: 0;"></path></svg>
 								  </a>
 							</li>	
+							
 							<li class="nav-item pl-4 flex justify-center relative">
 								<div class="dropdown header-profile2">
 									<a data-dz-dropdown="DzinfoDropdown" class="dz-dropdown nav-link relative p-2 text-[#464a53] text-lg leading-[1] block duration-500" href="javascript:void(0);" role="button" data-bs-toggle="dropdown">
@@ -248,7 +249,7 @@
 							<span class="nav-text">Gestión de Grupos</span>
 						</a>
 					</li>
-					<li><a href="project.html">
+					<li><a href="reports.html">
 						<div class="menu-icon">
 							<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path fill-rule="evenodd" clip-rule="evenodd" d="M13.5096 2.53165H7.41104C5.50437 2.52432 3.94146 4.04415 3.89654 5.9499V15.7701C3.85437 17.7071 5.38979 19.3121 7.32671 19.3552C7.35512 19.3552 7.38262 19.3561 7.41104 19.3552H14.7343C16.6538 19.2773 18.1663 17.6915 18.1525 15.7701V7.36798L13.5096 2.53165Z" stroke="#888888" stroke-linecap="round" stroke-linejoin="round"/>
@@ -278,7 +279,7 @@
                             <li><a href="ListadoNoticias.html">Noticias</a></li>
                         </ul>
                     </li>
-					<li><a href="Presupuesto.html">
+					<li><a href="blog-1.html">
 						<div class="menu-icon">
 							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path fill-rule="evenodd" clip-rule="evenodd" d="M16.334 2.75012H7.665C4.644 2.75012 2.75 4.88912 2.75 7.91612V16.0841C2.75 19.1111 4.635 21.2501 7.665 21.2501H16.333C19.364 21.2501 21.25 19.1111 21.25 16.0841V7.91612C21.25 4.88912 19.364 2.75012 16.334 2.75012Z" stroke="#888888" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -312,31 +313,191 @@
 			</div>
         </div>		
         <!-- Sidebar end -->
+		
 
-		<!-- Content body start -->
+
+
+
+		<!-- AQUI COMIENZA SU CODIGO-->
 
 		<div class="content-body">
-
-			<!-- HERO / BANNER -->
-			<div class="zentillal-hero">
-				<div class="zentillal-overlay">
-					<h1>Centro Infantil de Zentillal</h1>
-					<p>Formando el futuro con amor, educación y valores</p>
+			<!-- row -->	
+            <div class="container">
+				<div class="row">
+					
+					<div class="w-full">
+						<div class="card">
+							<div class="card-header flex justify-between items-center sm:p-5 sm:pt-6 p-4 pt-5 max-sm:pb-5 relative z-[2]">
+								<h4 class="heading relative blog-title">Noticias activas</h4>
+								<a href="CrearNoticia.html" class="btn hover:bg-hover-primary duration-500 py-[5px] px-3 text-[13px] font-normal rounded text-white bg-primary leading-[18px] inline-block border border-primary">Agregar Noticia</a>
+							</div>
+							<div class="sm:p-5 p-4">
+								<div class="row">
+									<div class="lg:w-1/2 w-full">
+										<div class="blog-img relative">
+											<img src="assets/images/blog/professional.jpg" alt="" class="sm:h-[575px] h-[350px] w-full object-cover rounded-md">
+											<div class="absolute py-5 px-[15px] bottom-0">
+												<h2 class="xl:text-3xl text-xl text-white leading-[1.1] font-semibold mb-2">Centro Infantil de Zentillal ha sido reconocido</h2>
+												<img src="assets/images/contacts/pic1.jpg" class="h-[1.875rem] w-[1.875rem] relative inline-block object-cover rounded-full mr-2" alt="">
+												<span class="text-white text-sm">Publicado 19/04/2026</span>
+											</div>
+										</div>
+									</div>	
+									<div class="lg:w-1/2 w-full">
+										<div class="blog-post max-xl:mt-[10px]">
+											<div class="flex items-center mb-[21px]">
+												<img src="assets/images/profile/friends/f1.jpg" class="xl:h-[90px] h-[70px] xl:w-[90px] w-[70px] relative inline-block object-cover rounded-full mr-2 custome-avatar" alt="">
+												<div class="post-data">
+													<span class="text-xs py-[0.3125rem] px-2 leading-[0.6875rem] font-medium text-white text-center whitespace-nowrap rounded inline-block bg-secondary">Campaña</span>
+													<h4 class="sm:text-[15px] text-sm mt-[5px] mb-2 leading-[1.5]">Campaña para promover la educación infantil</h4>
+													<div>
+														<img src="assets/images/contacts/pic2.jpg" class="h-[1.275rem] w-[1.275rem] relative inline-block object-cover rounded-full mr-2 small-post" alt="">
+												        <span class="text-xs text-body-color"><b class="text-primary">Marry</b> Publicado 19/04/2026</span>
+													</div>
+												</div>
+											</div>
+											<div class="flex items-center mb-[21px]">
+												<img src="assets/images/profile/friends/f2.jpg" class="xl:h-[90px] h-[70px] xl:w-[90px] w-[70px] relative inline-block object-cover rounded-full mr-2 custome-avatar" alt="">
+												<div class="post-data">
+													<span class="text-xs py-[0.3125rem] px-2 leading-[0.6875rem] font-medium text-white text-center whitespace-nowrap rounded inline-block bg-primary">Información</span>
+													<h4 class="sm:text-[15px] text-sm mt-[5px] mb-2 leading-[1.5]">Becas para niños</h4>
+													<div>
+														<img src="assets/images/contacts/pic1.jpg" class="h-[1.275rem] w-[1.275rem] relative inline-block object-cover rounded-full mr-2 small-post" alt="">
+												        <span class="text-xs text-body-color"><b class="text-primary">Harry</b> Publicado 19/04/2026</span>
+													</div>
+												</div>
+											</div>
+											<div class="flex items-center mb-[21px]">
+												<img src="assets/images/profile/friends/f3.jpg" class="xl:h-[90px] h-[70px] xl:w-[90px] w-[70px] relative inline-block object-cover rounded-full mr-2 custome-avatar" alt="">
+												<div class="post-data">
+													<span class="text-xs py-[0.3125rem] px-2 leading-[0.6875rem] font-medium text-white text-center whitespace-nowrap rounded inline-block bg-secondary">Campaña</span>
+													<h4 class="sm:text-[15px] text-sm mt-[5px] mb-2 leading-[1.5]">Recolecta de donaciones</h4>
+													<div>
+														<img src="assets/images/contacts/pic1.jpg" class="h-[1.275rem] w-[1.275rem] relative inline-block object-cover rounded-full mr-2 small-post" alt="">
+												        <span class="text-xs text-body-color"><b class="text-primary">Marta</b> Publicado 16/04/2026</span>
+													</div>
+												</div>
+											</div>
+											<div class="flex items-center mb-[21px]">
+												<img src="assets/images/profile/friends/f4.jpg" class="xl:h-[90px] h-[70px] xl:w-[90px] w-[70px] relative inline-block object-cover rounded-full mr-2 custome-avatar" alt="">
+												<div class="post-data">
+													<span class="text-xs py-[0.3125rem] px-2 leading-[0.6875rem] font-medium text-white text-center whitespace-nowrap rounded inline-block bg-success">Notificación</span>
+													<h4 class="sm:text-[15px] text-sm mt-[5px] mb-2 leading-[1.5]">ATENCIÓN Jueves 23 de abril estara cerrado</h4>
+													<div>
+														<img src="assets/images/contacts/pic1.jpg" class="h-[1.275rem] w-[1.275rem] relative inline-block object-cover rounded-full mr-2 small-post" alt="">
+												        <span class="text-xs text-body-color"><b class="text-primary">Nicole</b> Publicado 18/04/2026</span>
+													</div>
+												</div>
+											</div>
+											<div class="flex items-center mb-[21px]">
+												<img src="assets/images/profile/friends/f2.jpg" class="xl:h-[90px] h-[70px] xl:w-[90px] w-[70px] relative inline-block object-cover rounded-full mr-2 custome-avatar" alt="">
+												<div class="post-data">
+													<span class="text-xs py-[0.3125rem] px-2 leading-[0.6875rem] font-medium text-white text-center whitespace-nowrap rounded inline-block bg-secondary">Campaña</span>
+													<h4 class="sm:text-[15px] text-sm mt-[5px] mb-2 leading-[1.5]">Campaña de recaudación para los animales de la calle</h4>
+													<div>
+														<img src="assets/images/contacts/pic1.jpg" class="h-[1.275rem] w-[1.275rem] relative inline-block object-cover rounded-full mr-2 small-post" alt="">
+												        <span class="text-xs text-body-color"><b class="text-primary">Josue</b> Publicado 20/04/2026</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>	
+					</div>
+					<div class="xl:w-3/4 lg:w-7/12 w-full">
+						<div class="row">
+							
+							<div class="w-full">
+								<div class="card">
+									<div class="card-header flex justify-between items-center sm:p-5 sm:pt-6 p-4 pt-5 max-sm:pb-5 relative z-[2]">
+										<h4 class="heading blog-title relative">Noticias recientes</h4>
+										<a href="javascript:void(0)" class="btn hover:bg-hover-primary duration-500 py-[5px] px-3 text-[13px] font-normal rounded text-white bg-primary leading-[18px] inline-block border border-primary">Ver mas</a>
+									</div>
+									<div class="card-body sm:p-5 p-4">
+										<div class="third-post flex items-center mb-[21px] max-xl:flex-wrap">
+											<img src="assets/images/blog/s3.jpg" alt="" class="xl:w-[300px] w-full mr-[18px] xl::h-[180px] h-[220px] object-cover rounded-md">
+											<div class="post-1">
+												<div class="max-xl:mt-[15px]">
+													<span class="text-xs py-[0.3125rem] px-2 leading-[0.6875rem] font-medium text-white text-center whitespace-nowrap rounded inline-block bg-secondary">Campaña</span>
+													<a href="javascript:void(0);"><h4 class="text-[15px] mt-1.5 mb-2">Colecta de alimentos para animales de la calle</h4></a>
+													<div class="mb-2">
+														<img src="assets/images/contacts/pic1.jpg" class="h-[1.275rem] w-[1.275rem] relative inline-block object-cover rounded-full mr-2 small-post" alt="">
+														<span class="text-xs text-body-color"><b class="text-primary">Jonathan</b> Publicado 12/04/2024</span>
+													</div>
+													<span class="text-body-color text-xs">
+														Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+													</span>
+													
+												</div>
+											</div>
+										</div>
+										<div class="third-post flex items-center mb-[21px] max-xl:flex-wrap">
+											<img src="assets/images/blog/s4.jpg" alt="" class="xl:w-[300px] w-full mr-[18px] xl::h-[180px] h-[220px] object-cover rounded-md">
+											<div class="post-1">
+												<div class="max-xl:mt-[15px]">
+													<span class="text-xs py-[0.3125rem] px-2 leading-[0.6875rem] font-medium text-white text-center whitespace-nowrap rounded inline-block bg-info">Arte</span>
+													<a href="javascript:void(0);"><h4 class="text-[15px] mt-1.5 mb-2">Algunos de los dibujos del mes</h4></a>
+													<div class="mb-2">
+														<img src="assets/images/contacts/pic2.jpg" class="h-[1.275rem] w-[1.275rem] relative inline-block object-cover rounded-full mr-2 small-post" alt="">
+														<span class="text-xs text-body-color"><b class="text-primary">Moni</b> Publicado 12/04/2024</span>
+													</div>
+													<span class="text-body-color text-xs">
+														Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+													</span>
+												</div>
+											</div>
+										</div>
+										<div class="third-post flex items-center mb-[21px] max-xl:flex-wrap">
+											<img src="assets/images/blog/s5.jpg" alt="" class="xl:w-[300px] w-full mr-[18px] xl::h-[180px] h-[220px] object-cover rounded-md">
+											<div class="post-1">
+												<div class="max-xl:mt-[15px]">
+													<span class="text-xs py-[0.3125rem] px-2 leading-[0.6875rem] font-medium text-white text-center whitespace-nowrap rounded inline-block bg-primary">Información</span>
+													<a href="javascript:void(0);"><h4 class="text-[15px] mt-1.5 mb-2">Nuevo sistema de busetas.</h4></a>
+													<div class="mb-2">
+														<img src="assets/images/contacts/pic3.jpg" class="h-[1.275rem] w-[1.275rem] relative inline-block object-cover rounded-full mr-2 small-post" alt="">
+														<span class="text-xs text-body-color"><b class="text-primary">Lisa</b> Publicado 12/04/2024</span>
+													</div>
+													<span class="text-body-color text-xs">
+														Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+													</span>
+													
+												</div>
+											</div>
+										</div>
+										<div class="third-post flex items-center mb-[21px] max-xl:flex-wrap">
+											<img src="assets/images/blog/s6.jpg" alt="" class="xl:w-[300px] w-full mr-[18px] xl::h-[180px] h-[220px] object-cover rounded-md">
+											<div class="post-1">
+												<div class="max-xl:mt-[15px]">
+													<span class="text-xs py-[0.3125rem] px-2 leading-[0.6875rem] font-medium text-white text-center whitespace-nowrap rounded inline-block bg-warning">Actividad</span>
+													<a href="javascript:void(0);"><h4 class="text-[15px] mt-1.5 mb-2">Pinta caritas el proximo fin de semana</h4></a>
+													<div class="mb-2">
+														<img src="assets/images/contacts/pic1.jpg" class="h-[1.275rem] w-[1.275rem] relative inline-block object-cover rounded-full mr-2 small-post" alt="">
+														<span class="text-xs text-body-color"><b class="text-primary">Moni</b> Publicado 12/04/2024</span>
+													</div>
+													<span class="text-body-color text-xs">
+														Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+													</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+					</div>
 				</div>
+			
 			</div>
+        </div>
+         <!-- Content body end --> 
 
-			<!-- CONTENIDO INFERIOR -->
-			<div class="zentillal-info">
-				<h2>Bienvenido al sistema</h2>
-				<p>
-					Te encuentras dentro del sistema del Centro Infantil Zentillal, donde podrás acceder a todas las herramientas necesarias para la gestión educativa.
-					Aquí encontrarás opciones de utilidad como administración de estudiantes, control académico, reportes y mucho más, todo en un solo lugar.
-				</p>
-			</div>
+        <!-- AQUI TERMINA SU CODIGO-->
 
-		</div>
 
-         <!-- Content body end -->
+
 
         <!-- Footer start -->
         <div class="footer dark:bg-[#242424] mt-4 border-t border-[#E6E6E6] dark:border-[#444444] text-[13px] font-normal">
@@ -345,8 +506,6 @@
             </div>
         </div>
         <!-- Footer end -->
-
-
 	</div>
     <!-- Main wrapper end -->
 
@@ -374,7 +533,6 @@
 
 	<script  src="assets/js/deznav-init.js"></script>
 	<script  src="assets/js/custom.js"></script>
-	
 	
 </body>
 </html>

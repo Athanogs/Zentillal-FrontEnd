@@ -56,6 +56,7 @@
 </head>
 <body class="selection:text-white selection:bg-primary">
 
+	<!-- DE AQUI  -->
     <!-- Preloader start  -->
     <div id="preloader" class="bg-white dark:bg-[#242424] p-0 m-0 h-full fixed z-[99999] w-full flex items-center justify-center">
 		<div class="lds-ripple inline-block relative w-20 h-20">
@@ -89,13 +90,13 @@
                 <nav class="navbar navbar-expand">
                     <div class="navbar-collapse justify-between">
                        <ul class="navbar-nav header-right flex flex-row h-full">
-							
 							<li class="nav-item dropdown notification_dropdown flex justify-center relative">
 								  <a class="nav-link relative p-[0.8375rem] text-[#464a53] text-lg leading-[1] block duration-500 bell dz-fullscreen"  href="javascript:void(0);">
 									 <svg id="icon-full" viewBox="0 0 24 24" width="20" height="20" stroke="white" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3" style="stroke-dasharray: 37, 57; stroke-dashoffset: 0;"></path></svg>
 									 <svg id="icon-minimize" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-minimize"><path d="M8 3v3a2 2 0 0 1-2 2H3m18 0h-3a2 2 0 0 1-2-2V3m0 18v-3a2 2 0 0 1 2-2h3M3 16h3a2 2 0 0 1 2 2v3" style="stroke-dasharray: 37, 57; stroke-dashoffset: 0;"></path></svg>
 								  </a>
 							</li>	
+							
 							<li class="nav-item pl-4 flex justify-center relative">
 								<div class="dropdown header-profile2">
 									<a data-dz-dropdown="DzinfoDropdown" class="dz-dropdown nav-link relative p-2 text-[#464a53] text-lg leading-[1] block duration-500" href="javascript:void(0);" role="button" data-bs-toggle="dropdown">
@@ -248,7 +249,7 @@
 							<span class="nav-text">Gestión de Grupos</span>
 						</a>
 					</li>
-					<li><a href="project.html">
+					<li><a href="reports.html">
 						<div class="menu-icon">
 							<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path fill-rule="evenodd" clip-rule="evenodd" d="M13.5096 2.53165H7.41104C5.50437 2.52432 3.94146 4.04415 3.89654 5.9499V15.7701C3.85437 17.7071 5.38979 19.3121 7.32671 19.3552C7.35512 19.3552 7.38262 19.3561 7.41104 19.3552H14.7343C16.6538 19.2773 18.1663 17.6915 18.1525 15.7701V7.36798L13.5096 2.53165Z" stroke="#888888" stroke-linecap="round" stroke-linejoin="round"/>
@@ -278,7 +279,7 @@
                             <li><a href="ListadoNoticias.html">Noticias</a></li>
                         </ul>
                     </li>
-					<li><a href="Presupuesto.html">
+					<li><a href="blog-1.html">
 						<div class="menu-icon">
 							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path fill-rule="evenodd" clip-rule="evenodd" d="M16.334 2.75012H7.665C4.644 2.75012 2.75 4.88912 2.75 7.91612V16.0841C2.75 19.1111 4.635 21.2501 7.665 21.2501H16.333C19.364 21.2501 21.25 19.1111 21.25 16.0841V7.91612C21.25 4.88912 19.364 2.75012 16.334 2.75012Z" stroke="#888888" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -312,31 +313,376 @@
 			</div>
         </div>		
         <!-- Sidebar end -->
+		
+
+
+
+
+		<!-- AQUI COMIENZA SU CODIGO-->
 
 		<!-- Content body start -->
-
 		<div class="content-body">
+			<!-- row -->	
+			
+			<div class="container-fluid">
+				<div class="row">
+					<div class="w-full">
+						<div class="card overflow-hidden relative">
+							<div class="card-body p-0">
+								<div class="overflow-x-auto active-projects style-1">
+									
+									<!-- Search Bar -->
+									<div class="p-5 border-b border-[#E6E6E6] dark:border-[#444444]">
+										<input type="text" id="searchInput" placeholder="Buscar por nombre ..." class="w-full px-4 py-2 border border-[#E6E6E6] dark:border-[#444444] rounded bg-white dark:bg-[#1a1a1a] text-[13px] text-[#374557] dark:text-white focus:outline-none focus:border-primary" />
+									</div>
+									
+									<table id="empoloyees-tblwrapper" class="table">
+										<thead>
+											<tr>
+												<th class="text-[13px] py-2.5 pl-4 pr-0 bg-[#F0F4F9] text-[#374557] capitalize font-medium bg-none whitespace-nowrap text-left">Cedula Encargado</th>
+												<th class="text-[13px] py-2.5 px-4 bg-[#F0F4F9] text-[#374557] capitalize font-medium bg-none whitespace-nowrap text-left">Encargado</th>
+												<th class="text-[13px] py-2.5 px-4 bg-[#F0F4F9] text-[#374557] capitalize font-medium bg-none whitespace-nowrap text-left">Infante</th>
+												<th class="text-[13px] py-2.5 px-4 bg-[#F0F4F9] text-[#374557] capitalize font-medium bg-none whitespace-nowrap text-left">Correo Electrónico</th>
+												<th class="text-[13px] py-2.5 px-4 bg-[#F0F4F9] text-[#374557] capitalize font-medium bg-none whitespace-nowrap text-left">Número de Contacto</th>
+												<th class="text-[13px] py-2.5 px-4 bg-[#F0F4F9] text-[#374557] capitalize font-medium bg-none whitespace-nowrap text-left">Género</th>
+												<th class="text-[13px] py-2.5 px-4 bg-[#F0F4F9] text-[#374557] capitalize font-medium bg-none whitespace-nowrap text-left">Provincia</th>
+												<th class="text-[13px] py-2.5 px-4 bg-[#F0F4F9] text-[#374557] capitalize font-medium bg-none whitespace-nowrap text-right">Estado</th>
+											</tr>
+										</thead>
+										<tbody id="tableBody">
+											<tr class="employee-row">
+												<td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 pl-4 pr-0 font-normal whitespace-nowrap"><span class="text-body-color dark:text-white text-[13px]">1-0582-1234</span></td>
+												<td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap employee-name">
+													<div class="products flex items-center">
+														<img src="assets/images/contacts/pic2.jpg" class="inline-block mr-2.5 w-[2.813rem] min-w-[2.813rem] h-[2.813rem] rounded-md relative object-cover avatar-md" alt="">
+														<div>
+															<h6 class="text-sm whitespace-nowrap">Antonio Lizano</h6>
+															<span class="text-body-color dark:text-white text-xs">Padre</span>	
+														</div>	
+													</div>
+												</td>
+												<td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap">
+													<span class="text-body-color dark:text-white text-[13px]">Diego Lizano</span>
+												</td>
+												<td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap">
+													<span class="text-[13px] text-primary">antonioliz@gmail.com</span>
+												</td>
+												<td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap">
+													<span class="text-body-color dark:text-white text-[13px]">+506 8765 4321</span>
+												</td>
+												<td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap">
+													<span class="text-body-color dark:text-white text-[13px]">Masculino</span>
+												</td>	
+												<td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap">
+													<span class="text-body-color dark:text-white text-[13px]">San José</span>
+												</td>
+												<td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap text-right"><span class="text-xs py-[5px] px-3 rounded font-medium leading-[1.5] text-success bg-success-light">Activo</span>
+												</td>
+											</tr>
+											<tr class="employee-row">
+												<td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 pl-4 pr-0 font-normal whitespace-nowrap"><span class="text-body-color dark:text-white text-[13px]">2-1234-6789</span></td>
+												<td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap employee-name">
+													<div class="products flex items-center">
+														<img src="assets/images/contacts/pic1.jpg" class="inline-block mr-2.5 w-[2.813rem] min-w-[2.813rem] h-[2.813rem] rounded-md relative object-cover avatar-md" alt="">
+														<div>
+															<h6 class="text-sm whitespace-nowrap">Marta Rivera</h6>
+															<span class="text-body-color dark:text-white text-xs">Madre</span>	
+														</div>	
+													</div>
+												</td>
+												<td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap"><span class="text-body-color dark:text-white text-[13px]">María Rivera</span></td>
+												<td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap">
+													<span class="text-[13px] text-primary">marta.rivera@gmail.com</span>
+												</td>
+												<td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap">
+													<span class="text-body-color dark:text-white text-[13px]">+506 9876 5432</span>
+												</td>
+												<td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap">
+													<span class="text-body-color dark:text-white text-[13px]">Femenino</span>
+												</td>	
+												<td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap">
+													<span class="text-body-color dark:text-white text-[13px]">Alajuela</span>
+												</td>
+												<td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap text-right">
+													<span class="text-xs py-[5px] px-3 rounded font-medium leading-[1.5] text-danger bg-danger-light">Inactivo</span>
+												</td>
+											</tr>
+											<tr class="employee-row">
+												<td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 pl-4 pr-0 font-normal whitespace-nowrap"><span class="text-body-color dark:text-white text-[13px]">3-5678-2345</span></td>
+												<td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap employee-name">
+													<div class="products flex items-center">
+														<img src="assets/images/contacts/pic3.jpg" class="inline-block mr-2.5 w-[2.813rem] min-w-[2.813rem] h-[2.813rem] rounded-md relative object-cover avatar-md" alt="">
+														<div>
+															<h6 class="text-sm whitespace-nowrap">Carlos Mora</h6>
+															<span class="text-body-color dark:text-white text-xs">Padre</span>	
+														</div>	
+													</div>
+												</td>
+												<td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap"><span class="text-body-color dark:text-white text-[13px]">Lucas Mora</span></td>
+												<td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap">
+													<span class="text-[13px] text-primary">carlos.mora@gmail.com</span>
+												</td>
+												<td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap">
+													<span class="text-body-color dark:text-white text-[13px]">+506 7654 3210</span>
+												</td>
+												<td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap">
+													<span class="text-body-color dark:text-white text-[13px]">Masculino</span>
+												</td>	
+												<td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap">
+													<span class="text-body-color dark:text-white text-[13px]">Cartago</span>
+												</td>
+												<td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap text-right">
+													<span class="text-xs py-[5px] px-3 rounded font-medium leading-[1.5] text-success bg-success-light">Activo</span>
+												</td>
+											</tr>
+											<tr class="employee-row">
+												<td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 pl-4 pr-0 font-normal whitespace-nowrap"><span class="text-body-color dark:text-white text-[13px]">4-9012-3456</span></td>
+												<td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap employee-name">
+													<div class="products flex items-center">
+														<img src="assets/images/contacts/pic2.jpg" class="inline-block mr-2.5 w-[2.813rem] min-w-[2.813rem] h-[2.813rem] rounded-md relative object-cover avatar-md" alt="">
+														<div>
+															<h6 class="text-sm whitespace-nowrap">Sofía Durán</h6>
+															<span class="text-body-color dark:text-white text-xs">Madre</span>	
+														</div>	
+													</div>
+												</td>
+												<td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap">
+													<span class="text-body-color dark:text-white text-[13px]">Valentina Durán</span>
+												</td>
+												<td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap">
+													<span class="text-[13px] text-primary">sofia.duran@gmail.com</span>
+												</td>
+												<td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap">
+													<span class="text-body-color dark:text-white text-[13px]">+506 6543 2109</span>
+												</td>
+												<td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap">
+													<span class="text-body-color dark:text-white text-[13px]">Femenino</span>
+												</td>	
+												<td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap">
+													<span class="text-body-color dark:text-white text-[13px]">Heredia</span>
+												</td>
+												<td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap text-right">
+													<span class="text-xs py-[5px] px-3 rounded font-medium leading-[1.5] text-success bg-success-light">Activo</span>
+												</td>
+											</tr>
+											<tr class="employee-row">
+												<td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 pl-4 pr-0 font-normal whitespace-nowrap"><span class="text-body-color dark:text-white text-[13px]">5-3456-7890</span></td>
+												<td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap employee-name">
+													<div class="products flex items-center">
+														<img src="assets/images/contacts/pic1.jpg" class="inline-block mr-2.5 w-[2.813rem] min-w-[2.813rem] h-[2.813rem] rounded-md relative object-cover avatar-md" alt="">
+														<div>
+															<h6 class="text-sm whitespace-nowrap">Roberto Campos</h6>
+															<span class="text-body-color dark:text-white text-xs">Padre</span>	
+														</div>	
+													</div>
+												</td>
+												<td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap"><span class="text-body-color dark:text-white text-[13px]">Gabriel Campos</span></td>
+												<td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap">
+													<span class="text-[13px] text-primary">roberto.campos@gmail.com</span>
+												</td>
+												<td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap">
+													<span class="text-body-color dark:text-white text-[13px]">+506 5432 1098</span>
+												</td>
+												<td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap">
+													<span class="text-body-color dark:text-white text-[13px]">Masculino</span>
+												</td>	
+												<td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap">
+													<span class="text-body-color dark:text-white text-[13px]">Limón</span>
+												</td>
+												<td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap text-right"><span class="text-xs py-[5px] px-3 rounded font-medium leading-[1.5] text-success bg-success-light">Activo</span>
+												</td>
+											</tr>
+											<tr class="employee-row">
+												<td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 pl-4 pr-0 font-normal whitespace-nowrap"><span class="text-body-color dark:text-white text-[13px]">6-7890-1234</span></td>
+												<td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap employee-name">
+													<div class="products flex items-center">
+														<img src="assets/images/contacts/pic3.jpg" class="inline-block mr-2.5 w-[2.813rem] min-w-[2.813rem] h-[2.813rem] rounded-md relative object-cover avatar-md" alt="">
+														<div>
+															<h6 class="text-sm whitespace-nowrap">Patricia Soto</h6>
+															<span class="text-body-color dark:text-white text-xs">Madre</span>	
+														</div>	
+													</div>
+												</td>
+												<td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap"><span class="text-body-color dark:text-white text-[13px]">Natalia Soto</span></td>
+												<td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap">
+													<span class="text-[13px] text-primary">patricia.soto@gmail.com</span>
+												</td>
+												<td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap">
+													<span class="text-body-color dark:text-white text-[13px]">+506 4321 0987</span>
+												</td>
+												<td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap">
+													<span class="text-body-color dark:text-white text-[13px]">Femenino</span>
+												</td>	
+												<td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap">
+													<span class="text-body-color dark:text-white text-[13px]">Puntarenas</span>
+												</td>
+												<td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap text-right">
+													<span class="text-xs py-[5px] px-3 rounded font-medium leading-[1.5] text-danger bg-danger-light">Inactivo</span>
+												</td>
+											</tr>
+											<tr class="employee-row">
+												<td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 pl-4 pr-0 font-normal whitespace-nowrap"><span class="text-body-color dark:text-white text-[13px]">7-2345-6789</span></td>
+												<td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap employee-name">
+													<div class="products flex items-center">
+														<img src="assets/images/contacts/pic2.jpg" class="inline-block mr-2.5 w-[2.813rem] min-w-[2.813rem] h-[2.813rem] rounded-md relative object-cover avatar-md" alt="">
+														<div>
+															<h6 class="text-sm whitespace-nowrap">Francisco Vega</h6>
+															<span class="text-body-color dark:text-white text-xs">Padre</span>	
+														</div>	
+													</div>
+												</td>
+												<td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap"><span class="text-body-color dark:text-white text-[13px]">Alejandro Vega</span></td>
+												<td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap">
+													<span class="text-[13px] text-primary">francisco.vega@gmail.com</span>
+												</td>
+												<td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap">
+													<span class="text-body-color dark:text-white text-[13px]">+506 3210 9876</span>
+												</td>
+												<td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap">
+													<span class="text-body-color dark:text-white text-[13px]">Masculino</span>
+												</td>	
+												<td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap">
+													<span class="text-body-color dark:text-white text-[13px]">Guanacaste</span>
+												</td>
+												<td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap text-right"><span class="text-xs py-[5px] px-3 rounded font-medium leading-[1.5] text-success bg-success-light">Activo</span>
+												</td>
+											</tr>
+											<tr class="employee-row">
+												<td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 pl-4 pr-0 font-normal whitespace-nowrap">
+													<span class="text-body-color dark:text-white text-[13px]">5-6789-0123</span></td>
+												<td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap employee-name">
+													<div class="products flex items-center">
+														<img src="assets/images/contacts/pic1.jpg" class="inline-block mr-2.5 w-[2.813rem] min-w-[2.813rem] h-[2.813rem] rounded-md relative object-cover avatar-md" alt="">
+														<div>
+															<h6 class="text-sm whitespace-nowrap">Cristina Jiménez</h6>
+															<span class="text-body-color dark:text-white text-xs">Madre</span>	
+														</div>	
+													</div>
+												</td>
+												<td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap"><span class="text-body-color dark:text-white text-[13px]">Emilia Jiménez</span></td>
+												<td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap">
+													<span class="text-[13px] text-primary">cristina.jimenez@gmail.com</span>
+												</td>
+												<td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap">
+													<span class="text-body-color dark:text-white text-[13px]">+506 1098 7654</span>
+												</td>
+												<td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap">
+													<span class="text-body-color dark:text-white text-[13px]">Femenino</span>
+												</td>	
+												<td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap">
+													<span class="text-body-color dark:text-white text-[13px]">La Fortuna</span>
+												</td>
+												<td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap text-right">
+													<span class="text-xs py-[5px] px-3 rounded font-medium leading-[1.5] text-danger bg-danger-light">Inactivo</span>
+												</td>
+											</tr>
+											<tr class="employee-row">
+												<td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 pl-4 pr-0 font-normal whitespace-nowrap"><span class="text-body-color dark:text-white text-[13px]">2-0123-4567</span></td>
+												<td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap employee-name">
+													<div class="products flex items-center">
+														<img src="assets/images/contacts/pic3.jpg" class="inline-block mr-2.5 w-[2.813rem] min-w-[2.813rem] h-[2.813rem] rounded-md relative object-cover avatar-md" alt="">
+														<div>
+															<h6 class="text-sm whitespace-nowrap">Miguel Acosta</h6>
+															<span class="text-body-color dark:text-white text-xs">Padre</span>	
+														</div>	
+													</div>
+												</td>
+												<td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap"><span class="text-body-color dark:text-white text-[13px]">Santiago Acosta</span></td>
+												<td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap">
+													<span class="text-[13px] text-primary">miguel.acosta@gmail.com</span>
+												</td>
+												<td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap">
+													<span class="text-body-color dark:text-white text-[13px]">+506 9876 5432</span>
+												</td>
+												<td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap">
+													<span class="text-body-color dark:text-white text-[13px]">Masculino</span>
+												</td>	
+												<td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap">
+													<span class="text-body-color dark:text-white text-[13px]">San Isidro</span>
+												</td>
+												<td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap text-right"><span class="text-xs py-[5px] px-3 rounded font-medium leading-[1.5] text-success bg-success-light">Activo</span>
+												</td>
+											</tr>
+											<tr class="employee-row">
+												<td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 pl-4 pr-0 font-normal whitespace-nowrap"><span class="text-body-color dark:text-white text-[13px]">1-4567-8901</span></td>
+												<td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap employee-name">
+													<div class="products flex items-center">
+														<img src="assets/images/contacts/pic2.jpg" class="inline-block mr-2.5 w-[2.813rem] min-w-[2.813rem] h-[2.813rem] rounded-md relative object-cover avatar-md" alt="">
+														<div>
+															<h6 class="text-sm whitespace-nowrap">Verónica López</h6>
+															<span class="text-body-color dark:text-white text-xs">Madre</span>	
+														</div>	
+													</div>
+												</td>
+												<td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap"><span class="text-body-color dark:text-white text-[13px]">Priscila López</span></td>
+												<td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap">
+													<span class="text-[13px] text-primary">veronica.lopez@gmail.com</span>
+												</td>
+												<td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap">
+													<span class="text-body-color dark:text-white text-[13px]">+506 7654 3210</span>
+												</td>
+												<td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap">
+													<span class="text-body-color dark:text-white text-[13px]">Femenino</span>
+												</td>	
+												<td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap">
+													<span class="text-body-color dark:text-white text-[13px]">Puerto Viejo</span>
+												</td>
+												<td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap text-right">
+													<span class="text-xs py-[5px] px-3 rounded font-medium leading-[1.5] text-danger bg-danger-light">Inactivo</span>
+												</td>
+											</tr>
+										</tbody>
+									</table>
 
-			<!-- HERO / BANNER -->
-			<div class="zentillal-hero">
-				<div class="zentillal-overlay">
-					<h1>Centro Infantil de Zentillal</h1>
-					<p>Formando el futuro con amor, educación y valores</p>
+									<div class="text-center">
+										<button 
+											type="button" 
+											onclick="window.location.href='ComunicacionCorreo.html'"
+											class="mr-1 mb-2 inline-block rounded font-medium xl:text-[15px] text-xs leading-5 xl:py-[0.719rem] xl:px-[1.563rem] py-2.5 px-4 border border-primary text-white bg-primary hover:bg-hover-primary hover:border-hover-primary duration-300">
+											Volver a Creación de notificaciones
+										</button>
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
-
-			<!-- CONTENIDO INFERIOR -->
-			<div class="zentillal-info">
-				<h2>Bienvenido al sistema</h2>
-				<p>
-					Te encuentras dentro del sistema del Centro Infantil Zentillal, donde podrás acceder a todas las herramientas necesarias para la gestión educativa.
-					Aquí encontrarás opciones de utilidad como administración de estudiantes, control académico, reportes y mucho más, todo en un solo lugar.
-				</p>
-			</div>
-
 		</div>
 
-         <!-- Content body end -->
+		<script>
+			// Search functionality
+			document.getElementById('searchInput').addEventListener('keyup', function(e) {
+				const searchTerm = e.target.value.toLowerCase();
+				const rows = document.querySelectorAll('.employee-row');
+				
+				rows.forEach(row => {
+					const nameCell = row.querySelector('.employee-name h6');
+					const name = nameCell ? nameCell.textContent.toLowerCase() : '';
+					
+					if (name.includes(searchTerm)) {
+						row.style.display = '';
+					} else {
+						row.style.display = 'none';
+					}
+				});
+			});
+		</script>
+
+		<script>
+			document.addEventListener('DOMContentLoaded', function() {
+				const dtButtons = document.querySelector('.dt-buttons');
+				if (dtButtons) {
+					dtButtons.remove();
+				}
+			});
+		</script>
+
+        <!-- AQUI TERMINA SU CODIGO-->
+
+
+
 
         <!-- Footer start -->
         <div class="footer dark:bg-[#242424] mt-4 border-t border-[#E6E6E6] dark:border-[#444444] text-[13px] font-normal">
@@ -345,8 +691,6 @@
             </div>
         </div>
         <!-- Footer end -->
-
-
 	</div>
     <!-- Main wrapper end -->
 
@@ -374,7 +718,6 @@
 
 	<script  src="assets/js/deznav-init.js"></script>
 	<script  src="assets/js/custom.js"></script>
-	
 	
 </body>
 </html>

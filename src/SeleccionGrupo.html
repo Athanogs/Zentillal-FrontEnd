@@ -56,6 +56,7 @@
 </head>
 <body class="selection:text-white selection:bg-primary">
 
+	<!-- DE AQUI  -->
     <!-- Preloader start  -->
     <div id="preloader" class="bg-white dark:bg-[#242424] p-0 m-0 h-full fixed z-[99999] w-full flex items-center justify-center">
 		<div class="lds-ripple inline-block relative w-20 h-20">
@@ -89,13 +90,13 @@
                 <nav class="navbar navbar-expand">
                     <div class="navbar-collapse justify-between">
                        <ul class="navbar-nav header-right flex flex-row h-full">
-							
 							<li class="nav-item dropdown notification_dropdown flex justify-center relative">
 								  <a class="nav-link relative p-[0.8375rem] text-[#464a53] text-lg leading-[1] block duration-500 bell dz-fullscreen"  href="javascript:void(0);">
 									 <svg id="icon-full" viewBox="0 0 24 24" width="20" height="20" stroke="white" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3" style="stroke-dasharray: 37, 57; stroke-dashoffset: 0;"></path></svg>
 									 <svg id="icon-minimize" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-minimize"><path d="M8 3v3a2 2 0 0 1-2 2H3m18 0h-3a2 2 0 0 1-2-2V3m0 18v-3a2 2 0 0 1 2-2h3M3 16h3a2 2 0 0 1 2 2v3" style="stroke-dasharray: 37, 57; stroke-dashoffset: 0;"></path></svg>
 								  </a>
 							</li>	
+							
 							<li class="nav-item pl-4 flex justify-center relative">
 								<div class="dropdown header-profile2">
 									<a data-dz-dropdown="DzinfoDropdown" class="dz-dropdown nav-link relative p-2 text-[#464a53] text-lg leading-[1] block duration-500" href="javascript:void(0);" role="button" data-bs-toggle="dropdown">
@@ -248,7 +249,7 @@
 							<span class="nav-text">Gestión de Grupos</span>
 						</a>
 					</li>
-					<li><a href="project.html">
+					<li><a href="reports.html">
 						<div class="menu-icon">
 							<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path fill-rule="evenodd" clip-rule="evenodd" d="M13.5096 2.53165H7.41104C5.50437 2.52432 3.94146 4.04415 3.89654 5.9499V15.7701C3.85437 17.7071 5.38979 19.3121 7.32671 19.3552C7.35512 19.3552 7.38262 19.3561 7.41104 19.3552H14.7343C16.6538 19.2773 18.1663 17.6915 18.1525 15.7701V7.36798L13.5096 2.53165Z" stroke="#888888" stroke-linecap="round" stroke-linejoin="round"/>
@@ -278,7 +279,7 @@
                             <li><a href="ListadoNoticias.html">Noticias</a></li>
                         </ul>
                     </li>
-					<li><a href="Presupuesto.html">
+					<li><a href="blog-1.html">
 						<div class="menu-icon">
 							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path fill-rule="evenodd" clip-rule="evenodd" d="M16.334 2.75012H7.665C4.644 2.75012 2.75 4.88912 2.75 7.91612V16.0841C2.75 19.1111 4.635 21.2501 7.665 21.2501H16.333C19.364 21.2501 21.25 19.1111 21.25 16.0841V7.91612C21.25 4.88912 19.364 2.75012 16.334 2.75012Z" stroke="#888888" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -312,31 +313,154 @@
 			</div>
         </div>		
         <!-- Sidebar end -->
+		
 
-		<!-- Content body start -->
+
+
+
+		<!-- AQUI COMIENZA SU CODIGO-->
 
 		<div class="content-body">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-12">
 
-			<!-- HERO / BANNER -->
-			<div class="zentillal-hero">
-				<div class="zentillal-overlay">
-					<h1>Centro Infantil de Zentillal</h1>
-					<p>Formando el futuro con amor, educación y valores</p>
-				</div>
-			</div>
 
-			<!-- CONTENIDO INFERIOR -->
-			<div class="zentillal-info">
-				<h2>Bienvenido al sistema</h2>
-				<p>
-					Te encuentras dentro del sistema del Centro Infantil Zentillal, donde podrás acceder a todas las herramientas necesarias para la gestión educativa.
-					Aquí encontrarás opciones de utilidad como administración de estudiantes, control académico, reportes y mucho más, todo en un solo lugar.
-				</p>
-			</div>
 
+						<div class="card">
+							
+							<div class="sm:p-5 p-4">
+								<div class="overflow-x-auto recentOrderTable">
+									<table class="table-scroll w-full overflow-hidden mb-4 min-w-[36rem]">
+										<thead>
+											<tr>
+												<th scope="col" class="py-[0.9375rem] px-2.5 text-left font-medium sm:text-base text-sm border-b border-[#E6E6E6] dark:border-[#444444] dark:text-white whitespace-nowrap">Grupo</th>
+												<th scope="col" class="py-[0.9375rem] px-2.5 text-left font-medium sm:text-base text-sm border-b border-[#E6E6E6] dark:border-[#444444] dark:text-white whitespace-nowrap">Profesor</th>
+												<th scope="col" class="py-[0.9375rem] px-2.5 text-left font-medium sm:text-base text-sm border-b border-[#E6E6E6] dark:border-[#444444] dark:text-white whitespace-nowrap">Aula</th>
+												<th scope="col" class="py-[0.9375rem] px-2.5 text-left font-medium sm:text-base text-sm border-b border-[#E6E6E6] dark:border-[#444444] dark:text-white whitespace-nowrap">Cantidad de infantes</th>
+												<th scope="col" class="py-[0.9375rem] px-2.5 text-left font-medium sm:text-base text-sm border-b border-[#E6E6E6] dark:border-[#444444] dark:text-white whitespace-nowrap">Estado</th>
+												<th scope="col" class="py-[0.9375rem] px-2.5 text-right font-medium sm:text-base text-sm border-b border-[#E6E6E6] dark:border-[#444444] dark:text-white whitespace-nowrap">Acciones</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td class="py-[0.9375rem] px-2.5 text-left font-normal sm:text-sm text-xs text-body-color border-b border-[#E6E6E6] dark:border-[#444444] dark:text-white whitespace-nowrap">1</td>
+												<td class="py-[0.9375rem] px-2.5 text-left font-normal sm:text-sm text-xs text-body-color border-b border-[#E6E6E6] dark:border-[#444444] dark:text-white whitespace-nowrap">Marta Lopez</td>
+												<td class="py-[0.9375rem] px-2.5 text-left font-normal sm:text-sm text-xs text-body-color border-b border-[#E6E6E6] dark:border-[#444444] dark:text-white whitespace-nowrap">A01</td>
+												<td class="py-[0.9375rem] px-2.5 text-left font-normal sm:text-sm text-xs text-body-color border-b border-[#E6E6E6] dark:border-[#444444] dark:text-white whitespace-nowrap">15</td>
+												<td class="py-[0.9375rem] px-2.5 text-left font-normal text-sm border-b border-[#E6E6E6] dark:border-[#444444] dark:text-white whitespace-nowrap"><span class="py-[0.1875rem] px-[0.8125rem] text-xs rounded-[1.25rem] leading-[1.5] text-white bg-primary inline-block border border-primary duration-500">Activo</span></td>
+												<td class="py-[0.9375rem] px-2.5 text-right border-b border-[#E6E6E6] dark:border-[#444444] dark:text-white whitespace-nowrap">
+													<div class="dropdown custom-dropdown inline-block mb-0">
+														<div class="btn min-w-[2.4rem] p-[0.4375rem] h-[2.4rem] leading-[1.7] min-h-[2.5rem] btn-primary hover:bg-primary rounded-md text-center duration-300 dz-dropdown sharp btn-primary tp-btn" data-dz-dropdown="dropdown-26">
+															<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18px" height="18px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"/><circle fill="#000000" cx="12" cy="5" r="2"/><circle fill="#000000" cx="12" cy="12" r="2"/><circle fill="#000000" cx="12" cy="19" r="2"/></g></svg>
+														</div>
+														<div class="dz-dropdown-menu dropdown-menu-end absolute translate-x-[-125px] translate-y-[8px] overflow-hidden rounded-md z-[9] bg-white dark:bg-[#242424] dark:shadow-[0rem_0rem_0rem_0.0625rem_rgba(255,255,255,0.1)] shadow-[0_0_3.125rem_0_rgba(82,63,105,0.15)] min-w-[10rem] text-left py-2 hidden" id="dropdown-26">
+															<a class="dropdown-item py-2 px-5 text-body-color text-[13px] text-left block w-full whitespace-nowrap hover:bg-[#f8f9fa] hover:text-primary dark:bg-transparent dark:text-white" href="javascript:void(0);">Seleccionar</a>
+															<a class="dropdown-item py-2 px-5 text-[13px] text-left block w-full whitespace-nowrap hover:bg-[#f8f9fa] text-danger dark:bg-transparent dark:text-white" href="javascript:void(0);">Cancelar</a>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td class="py-[0.9375rem] px-2.5 text-left font-normal sm:text-sm text-xs text-body-color border-b border-[#E6E6E6] dark:border-[#444444] dark:text-white whitespace-nowrap">2 </td>
+												<td class="py-[0.9375rem] px-2.5 text-left font-normal sm:text-sm text-xs text-body-color border-b border-[#E6E6E6] dark:border-[#444444] dark:text-white whitespace-nowrap">Olga Barrantes</td>
+												<td class="py-[0.9375rem] px-2.5 text-left font-normal sm:text-sm text-xs text-body-color border-b border-[#E6E6E6] dark:border-[#444444] dark:text-white whitespace-nowrap">A02</td>
+												<td class="py-[0.9375rem] px-2.5 text-left font-normal sm:text-sm text-xs text-body-color border-b border-[#E6E6E6] dark:border-[#444444] dark:text-white whitespace-nowrap">8</td>
+												<td class="py-[0.9375rem] px-2.5 text-left font-normal text-sm border-b border-[#E6E6E6] dark:border-[#444444] dark:text-white whitespace-nowrap"><span class="py-[0.1875rem] px-[0.8125rem] text-xs rounded-[1.25rem] leading-[1.5] text-white bg-primary inline-block border border-primary duration-500">Activo</span></td>
+												<td class="py-[0.9375rem] px-2.5 text-right border-b border-[#E6E6E6] dark:border-[#444444] dark:text-white whitespace-nowrap">
+													<div class="dropdown custom-dropdown inline-block mb-0">
+														<div class="btn min-w-[2.4rem] p-[0.4375rem] h-[2.4rem] leading-[1.7] min-h-[2.5rem] btn-primary hover:bg-primary rounded-md text-center duration-300 dz-dropdown sharp btn-primary tp-btn" data-dz-dropdown="dropdown-27">
+															<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18px" height="18px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"/><circle fill="#000000" cx="12" cy="5" r="2"/><circle fill="#000000" cx="12" cy="12" r="2"/><circle fill="#000000" cx="12" cy="19" r="2"/></g></svg>
+														</div>
+														<div class="dz-dropdown-menu dropdown-menu-end absolute translate-x-[-125px] translate-y-[8px] overflow-hidden rounded-md z-[9] bg-white dark:bg-[#242424] dark:shadow-[0rem_0rem_0rem_0.0625rem_rgba(255,255,255,0.1)] shadow-[0_0_3.125rem_0_rgba(82,63,105,0.15)] min-w-[10rem] text-left py-2 hidden" id="dropdown-27">
+															<a class="dropdown-item py-2 px-5 text-body-color text-[13px] text-left block w-full whitespace-nowrap hover:bg-[#f8f9fa] hover:text-primary dark:bg-transparent dark:text-white" href="javascript:void(0);">Seleccionar</a>
+															<a class="dropdown-item py-2 px-5 text-[13px] text-left block w-full whitespace-nowrap hover:bg-[#f8f9fa] text-danger dark:bg-transparent dark:text-white" href="javascript:void(0);">Cancelar</a>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td class="py-[0.9375rem] px-2.5 text-left font-normal sm:text-sm text-xs text-body-color border-b border-[#E6E6E6] dark:border-[#444444] dark:text-white whitespace-nowrap">3 </td>
+												<td class="py-[0.9375rem] px-2.5 text-left font-normal sm:text-sm text-xs text-body-color border-b border-[#E6E6E6] dark:border-[#444444] dark:text-white whitespace-nowrap">Franchesca Loria</td>
+												<td class="py-[0.9375rem] px-2.5 text-left font-normal sm:text-sm text-xs text-body-color border-b border-[#E6E6E6] dark:border-[#444444] dark:text-white whitespace-nowrap">B1</td>
+												<td class="py-[0.9375rem] px-2.5 text-left font-normal sm:text-sm text-xs text-body-color border-b border-[#E6E6E6] dark:border-[#444444] dark:text-white whitespace-nowrap">13</td>
+												<td class="py-[0.9375rem] px-2.5 text-left font-normal text-sm border-b border-[#E6E6E6] dark:border-[#444444] dark:text-white whitespace-nowrap"><span class="py-[0.1875rem] px-[0.8125rem] text-xs rounded-[1.25rem] leading-[1.5] text-white bg-primary inline-block border border-primary duration-500">Activo</span></td>
+												<td class="py-[0.9375rem] px-2.5 text-right border-b border-[#E6E6E6] dark:border-[#444444] dark:text-white whitespace-nowrap">
+													<div class="dropdown custom-dropdown inline-block mb-0">
+														<div class="btn min-w-[2.4rem] p-[0.4375rem] h-[2.4rem] leading-[1.7] min-h-[2.5rem] btn-primary hover:bg-primary rounded-md text-center duration-300 dz-dropdown sharp btn-primary tp-btn" data-dz-dropdown="dropdown-28">
+															<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18px" height="18px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"/><circle fill="#000000" cx="12" cy="5" r="2"/><circle fill="#000000" cx="12" cy="12" r="2"/><circle fill="#000000" cx="12" cy="19" r="2"/></g></svg>
+														</div>
+														<div class="dz-dropdown-menu dropdown-menu-end absolute translate-x-[-125px] translate-y-[8px] overflow-hidden rounded-md z-[9] bg-white dark:bg-[#242424] dark:shadow-[0rem_0rem_0rem_0.0625rem_rgba(255,255,255,0.1)] shadow-[0_0_3.125rem_0_rgba(82,63,105,0.15)] min-w-[10rem] text-left py-2 hidden" id="dropdown-28">
+															<a class="dropdown-item py-2 px-5 text-body-color text-[13px] text-left block w-full whitespace-nowrap hover:bg-[#f8f9fa] hover:text-primary dark:bg-transparent dark:text-white" href="javascript:void(0);">Seleccionar</a>
+															<a class="dropdown-item py-2 px-5 text-[13px] text-left block w-full whitespace-nowrap hover:bg-[#f8f9fa] text-danger dark:bg-transparent dark:text-white" href="javascript:void(0);">Cancelar</a>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td class="py-[0.9375rem] px-2.5 text-left font-normal sm:text-sm text-xs text-body-color border-b border-[#E6E6E6] dark:border-[#444444] dark:text-white whitespace-nowrap">4</td>
+												<td class="py-[0.9375rem] px-2.5 text-left font-normal sm:text-sm text-xs text-body-color border-b border-[#E6E6E6] dark:border-[#444444] dark:text-white whitespace-nowrap">Samantha Roman</td>
+												<td class="py-[0.9375rem] px-2.5 text-left font-normal sm:text-sm text-xs text-body-color border-b border-[#E6E6E6] dark:border-[#444444] dark:text-white whitespace-nowrap">B2</td>
+												<td class="py-[0.9375rem] px-2.5 text-left font-normal sm:text-sm text-xs text-body-color border-b border-[#E6E6E6] dark:border-[#444444] dark:text-white whitespace-nowrap">17</td>
+												<td class="py-[0.9375rem] px-2.5 text-left font-normal text-sm border-b border-[#E6E6E6] dark:border-[#444444] dark:text-white whitespace-nowrap"><span class="py-[0.1875rem] px-[0.8125rem] text-xs rounded-[1.25rem] text-white bg-primary leading-[1.5] inline-block border border-primary duration-500">Activo</span></td>
+												<td class="py-[0.9375rem] px-2.5 text-right border-b border-[#E6E6E6] dark:border-[#444444] dark:text-white whitespace-nowrap">
+													<div class="dropdown custom-dropdown inline-block mb-0">
+														<div class="btn min-w-[2.4rem] p-[0.4375rem] h-[2.4rem] leading-[1.7] min-h-[2.5rem] btn-primary hover:bg-primary rounded-md text-center duration-300 dz-dropdown sharp btn-primary tp-btn" data-dz-dropdown="dropdown-29">
+															<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18px" height="18px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"/><circle fill="#000000" cx="12" cy="5" r="2"/><circle fill="#000000" cx="12" cy="12" r="2"/><circle fill="#000000" cx="12" cy="19" r="2"/></g></svg>
+														</div>
+														<div class="dz-dropdown-menu dropdown-menu-end absolute translate-x-[-125px] translate-y-[8px] overflow-hidden rounded-md z-[9] bg-white dark:bg-[#242424] dark:shadow-[0rem_0rem_0rem_0.0625rem_rgba(255,255,255,0.1)] shadow-[0_0_3.125rem_0_rgba(82,63,105,0.15)] min-w-[10rem] text-left py-2 hidden" id="dropdown-29">
+															<a class="dropdown-item py-2 px-5 text-body-color text-[13px] text-left block w-full whitespace-nowrap hover:bg-[#f8f9fa] hover:text-primary dark:bg-transparent dark:text-white" href="javascript:void(0);">Seleccionar</a>
+															<a class="dropdown-item py-2 px-5 text-[13px] text-left block w-full whitespace-nowrap hover:bg-[#f8f9fa] text-danger dark:bg-transparent dark:text-white" href="javascript:void(0);">Cancelar</a>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td class="py-[0.9375rem] px-2.5 text-left font-normal sm:text-sm text-xs text-body-color border-b border-[#E6E6E6] dark:border-[#444444] dark:text-white whitespace-nowrap">5</td>
+												<td class="py-[0.9375rem] px-2.5 text-left font-normal sm:text-sm text-xs text-body-color border-b border-[#E6E6E6] dark:border-[#444444] dark:text-white whitespace-nowrap">Shirley Johnson</td>
+												<td class="py-[0.9375rem] px-2.5 text-left font-normal sm:text-sm text-xs text-body-color border-b border-[#E6E6E6] dark:border-[#444444] dark:text-white whitespace-nowrap">B3</td>
+												<td class="py-[0.9375rem] px-2.5 text-left font-normal sm:text-sm text-xs text-body-color border-b border-[#E6E6E6] dark:border-[#444444] dark:text-white whitespace-nowrap">5</td>
+												<td class="py-[0.9375rem] px-2.5 text-left font-normal text-sm border-b border-[#E6E6E6] dark:border-[#444444] dark:text-white whitespace-nowrap"><span class="py-[0.1875rem] px-[0.8125rem] text-xs rounded-[1.25rem] text-white bg-primary leading-[1.5] inline-block border border-primary duration-500">Activo</span></td>
+												<td class="py-[0.9375rem] px-2.5 text-right border-b border-[#E6E6E6] dark:border-[#444444] dark:text-white whitespace-nowrap">
+													<div class="dropdown custom-dropdown inline-block mb-0">
+														<div class="btn min-w-[2.4rem] p-[0.4375rem] h-[2.4rem] leading-[1.7] min-h-[2.5rem] btn-primary hover:bg-primary rounded-md text-center duration-300 dz-dropdown sharp btn-primary tp-btn" data-dz-dropdown="dropdown-30">
+															<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18px" height="18px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"/><circle fill="#000000" cx="12" cy="5" r="2"/><circle fill="#000000" cx="12" cy="12" r="2"/><circle fill="#000000" cx="12" cy="19" r="2"/></g></svg>
+														</div>
+														<div class="dz-dropdown-menu dropdown-menu-end absolute translate-x-[-125px] translate-y-[8px] overflow-hidden rounded-md z-[9] bg-white dark:bg-[#242424] dark:shadow-[0rem_0rem_0rem_0.0625rem_rgba(255,255,255,0.1)] shadow-[0_0_3.125rem_0_rgba(82,63,105,0.15)] min-w-[10rem] text-left py-2 hidden" id="dropdown-30">
+															<a class="dropdown-item py-2 px-5 text-body-color text-[13px] text-left block w-full whitespace-nowrap hover:bg-[#f8f9fa] hover:text-primary dark:bg-transparent dark:text-white" href="javascript:void(0);">Seleccionar</a>
+															<a class="dropdown-item py-2 px-5 text-[13px] text-left block w-full whitespace-nowrap hover:bg-[#f8f9fa] text-danger dark:bg-transparent dark:text-white" href="javascript:void(0);">Cancelar</a>
+														</div>
+													</div>
+												</td>
+											</tr>
+											
+										</tbody>
+									</table>
+									<div class="text-center">
+										<button 
+											type="button" 
+											onclick="window.location.href='ComunicacionCorreo.html'"
+											class="mr-1 mb-2 inline-block rounded font-medium xl:text-[15px] text-xs leading-5 xl:py-[0.719rem] xl:px-[1.563rem] py-2.5 px-4 border border-primary text-white bg-primary hover:bg-hover-primary hover:border-hover-primary duration-300">
+											Volver a Creación de notificaciones
+										</button>
+									</div>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+        		</div>
+    		</div>
 		</div>
+		
 
-         <!-- Content body end -->
+
+		
+
+        <!-- AQUI TERMINA SU CODIGO-->
+
+
+
 
         <!-- Footer start -->
         <div class="footer dark:bg-[#242424] mt-4 border-t border-[#E6E6E6] dark:border-[#444444] text-[13px] font-normal">
@@ -345,8 +469,6 @@
             </div>
         </div>
         <!-- Footer end -->
-
-
 	</div>
     <!-- Main wrapper end -->
 
@@ -374,7 +496,6 @@
 
 	<script  src="assets/js/deznav-init.js"></script>
 	<script  src="assets/js/custom.js"></script>
-	
 	
 </body>
 </html>
