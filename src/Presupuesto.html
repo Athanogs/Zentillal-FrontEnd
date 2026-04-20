@@ -195,7 +195,7 @@
 							<span class="nav-text">Gestión de Usuarios</span>
 						</a>
 					</li>
-					<li><a href="Personal.html">
+					<li><a href="employee.html">
 						<div class="menu-icon">
 							<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path fill-rule="evenodd" clip-rule="evenodd" d="M15.8381 12.7317C16.4566 12.7317 16.9757 13.2422 16.8811 13.853C16.3263 17.4463 13.2502 20.1143 9.54009 20.1143C5.43536 20.1143 2.10834 16.7873 2.10834 12.6835C2.10834 9.30245 4.67693 6.15297 7.56878 5.44087C8.19018 5.28745 8.82702 5.72455 8.82702 6.36429C8.82702 10.6987 8.97272 11.8199 9.79579 12.4297C10.6189 13.0396 11.5867 12.7317 15.8381 12.7317Z" stroke="#888888" stroke-linecap="round" stroke-linejoin="round"/>
@@ -275,8 +275,8 @@
                         </a>
  
                         <ul class="sub-menu">
-                            <li><a href="NotificacionesCorreo.html">Notificación a correo</a></li>
-                            <li><a href="task-summary.html">Noticias</a></li>
+                            <li><a href="ComunicacionCorreo.html">Notificación a correo</a></li>
+                            <li><a href="ListadoNoticias.html">Noticias</a></li>
                         </ul>
                     </li>
 					<li>
@@ -297,7 +297,7 @@
                             <li><a href="Gastos.html">Gastos</a></li>
                         </ul>
                     </li>
-					<li><a href="svg-icon.html">
+					<li><a href="CreacionAutorizacionRetiro.html">
 						<div class="menu-icon">
 							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path fill-rule="evenodd" clip-rule="evenodd" d="M14.7379 2.76181H8.08493C6.00493 2.75381 4.29993 4.41181 4.25093 6.49081V17.2038C4.20493 19.3168 5.87993 21.0678 7.99293 21.1148C8.02393 21.1148 8.05393 21.1158 8.08493 21.1148H16.0739C18.1679 21.0298 19.8179 19.2998 19.8029 17.2038V8.03781L14.7379 2.76181Z" stroke="#888888" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -324,8 +324,196 @@
 
 
 		<!-- AQUI COMIENZA SU CODIGO-->
+		<div class="content-body">
+			<!-- row -->	
+			<div class="page-titles dark:bg-[#242424] flex items-center justify-between relative border-b border-[#E6E6E6] dark:border-[#444444] flex-wrap z-[1] py-[0.6rem] sm:px-[1.95rem] px-[1.55rem] bg-white">
+			<ol class="text-[13px] flex items-center flex-wrap bg-transparent">
+				<li><h5 class="sm:text-[17px] text-[15px] mr-8">Presupuesto Centro Infantil Zentillal</h5></li>
+			</ol>
+			</div>
 
+			<div class="container-fluid">
+				<div class="row">
+					<div class="2xl:w-1/4 col-xxl-4 w-full">
+						<div class="card h-auto">
+							<div class="flex justify-between items-center flex-wrap p-5 pt-6 relative z-[2] border-b border-[#E6E6E6] dark:border-[#444444]">
+								<h4 class="heading">Agregar Nuevo Aporte</h4>
+							</div>
+						
+							<div class="modal-body relative p-5">
+								<form class="finance-hr">
+								<div class="form-group mb-4">
+									  <label class="text-secondary dark:text-white">Monto Asignado<span class="text-danger">*</span>
+									  </label>
+									  <div class="flex items-stretch flex-wrap relative w-full">
+										<div class="input-group-text flex items-center justify-center py-1.5 px-3 text-sm font-normal border border-b-color text-center whitespace-nowrap min-w-[3.125rem] bg-[#f8f9fa] dark:bg-[#1E1E1E] text-body-color rounded-s-md">$</div>
+										<input type="number" class="relative flex-1 w-[1%] text-[13px] h-[2.813rem] border border-b-color block rounded-e-md py-1.5 px-3 text-body-color duration-500 focus:border-primary dark:hover:border-b-color outline-none ml-[-1px]" placeholder="5000">
+									  </div>
+								</div>
 
+								<div class="xl:w-1/2 mb-4">
+										<label class="form-label">Entidad Estatal<span class="text-danger">*</span></label>
+									<select class="nice-select style-1 py-1.5 px-3 bg-transparent text-[13px] font-normal outline-none relative focus:ring-0 border border-b-color text-[#a5a5a5] h-[2.813rem] leading-[1.813rem]">
+										<option  data-display="Select">Please select</option>
+										<option value="html">PANI</option>
+										<option value="css">IMAS</option>
+										<option value="javascript">JPS</option>
+										<option value="javascript">RECURSOS PROPIOS</option>
+									</select>
+								</div>	
+
+								<div class="xl:w-1/2 mb-4">
+										<label class="form-label">Tipo Fondo<span class="text-danger">*</span></label>
+									<select class="nice-select style-1 py-1.5 px-3 bg-transparent text-[13px] font-normal outline-none relative focus:ring-0 border border-b-color text-[#a5a5a5] h-[2.813rem] leading-[1.813rem]">
+										<option  data-display="Select">Please select</option>
+										<option value="html">Suministros</option>
+										<option value="css">Alimentos</option>
+										<option value="javascript">Servicios</option>
+										<option value="javascript">Otros</option>
+									</select>
+								</div>
+
+								<div class="w-full mb-3">
+    									<label class="form-label">Fecha<span class="text-danger">*</span></label>
+    								<input type="date"class="form-control relative text-[13px] h-auto min-h-auto border border-b-color block rounded-md p-3 duration-500 focus:border-primary dark:hover:border-b-color outline-none w-full"
+        							required/>
+								</div>
+
+								<div class="w-full mb-3">
+										<label class="form-label">Descripcion<span class="text-danger">*</span></label>
+										<textarea rows="3" class="form-control relative text-[13px] h-auto min-h-auto border border-b-color block rounded-md p-3 duration-500 focus:border-primary dark:hover:border-b-color outline-none w-full resize-y"></textarea>
+								</div>
+								<button type="submit" class="btn btn-primary sm:py-[0.719rem] py-2.5 sm:px-[1.563rem] px-4 duration-300 sm:text-[15px] text-[13px] font-medium rounded text-white bg-primary leading-5 inline-block border border-primary mb-4 hover:bg-hover-primary">Guardar</button>
+							</div>
+								</form>
+						</div>
+					</div>
+					
+
+					<div class="2xl:w-3/4 col-xxl-8 w-full">
+						<div class="card flex flex-col">
+							<div class="card-body">
+							<div class="overflow-x-auto active-projects">
+								<div class="p-5">
+									<h4 class="heading">Presupuestos Registrados</h4>
+								</div>
+								
+								<table id="empoloyees-tbl1" class="table">
+										<thead>
+											<tr>
+												<th class="text-[13px] py-2.5 pl-4 bg-[#F0F4F9] text-[#374557] capitalize font-medium bg-none whitespace-nowrap text-left">Monto Asignado</th>
+												<th class="text-[13px] py-2.5 px-4 bg-[#F0F4F9] text-[#374557] capitalize font-medium bg-none whitespace-nowrap text-left">Entidad Estatal</th>
+												<th class="text-[13px] py-2.5 px-4 bg-[#F0F4F9] text-[#374557] capitalize font-medium bg-none whitespace-nowrap text-left">Tipo De Fondo</th>
+												<th class="text-[13px] py-2.5 px-4 bg-[#F0F4F9] text-[#374557] capitalize font-medium bg-none whitespace-nowrap text-left">Fecha</th>
+												<th class="text-[13px] py-2.5 px-4 bg-[#F0F4F9] text-[#374557] capitalize font-medium bg-none whitespace-nowrap text-right">Descripcion</th>
+											</tr>
+										</thead>
+
+										<tbody>
+    <tr>
+        <td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-[1.125rem] px-5 whitespace-nowrap">₡500,000</td>
+        <td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-[1.125rem] px-5 whitespace-nowrap">PANI</td>
+        <td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-[1.125rem] px-5 whitespace-nowrap">Suministros</td>
+        <td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-[1.125rem] px-5 whitespace-nowrap">2026-01-10</td>
+        <td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-[1.125rem] px-5 whitespace-nowrap text-right">Compra de materiales didácticos</td>
+    </tr>
+
+    <tr>
+        <td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-[1.125rem] px-5 whitespace-nowrap">₡350,000</td>
+        <td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-[1.125rem] px-5 whitespace-nowrap">IMAS</td>
+        <td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-[1.125rem] px-5 whitespace-nowrap">Alimentos</td>
+        <td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-[1.125rem] px-5 whitespace-nowrap">2026-01-12</td>
+        <td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-[1.125rem] px-5 whitespace-nowrap text-right">Compra de meriendas</td>
+    </tr>
+
+    <tr>
+        <td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-[1.125rem] px-5 whitespace-nowrap">₡800,000</td>
+        <td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-[1.125rem] px-5 whitespace-nowrap">JPS</td>
+        <td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-[1.125rem] px-5 whitespace-nowrap">Servicios</td>
+        <td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-[1.125rem] px-5 whitespace-nowrap">2026-01-15</td>
+        <td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-[1.125rem] px-5 whitespace-nowrap text-right">Pago de servicios básicos</td>
+    </tr>
+
+    <tr>
+        <td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-[1.125rem] px-5 whitespace-nowrap">₡200,000</td>
+        <td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-[1.125rem] px-5 whitespace-nowrap">RECURSOS PROPIOS</td>
+        <td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-[1.125rem] px-5 whitespace-nowrap">Otros</td>
+        <td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-[1.125rem] px-5 whitespace-nowrap">2026-01-18</td>
+        <td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-[1.125rem] px-5 whitespace-nowrap text-right">Gastos menores del centro</td>
+    </tr>
+
+    <tr>
+        <td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-[1.125rem] px-5 whitespace-nowrap">₡600,000</td>
+        <td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-[1.125rem] px-5 whitespace-nowrap">PANI</td>
+        <td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-[1.125rem] px-5 whitespace-nowrap">Suministros</td>
+        <td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-[1.125rem] px-5 whitespace-nowrap">2026-01-20</td>
+        <td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-[1.125rem] px-5 whitespace-nowrap text-right">Compra de mobiliario</td>
+    </tr>
+
+    <tr>
+        <td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-[1.125rem] px-5 whitespace-nowrap">₡450,000</td>
+        <td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-[1.125rem] px-5 whitespace-nowrap">IMAS</td>
+        <td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-[1.125rem] px-5 whitespace-nowrap">Alimentos</td>
+        <td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-[1.125rem] px-5 whitespace-nowrap">2026-01-22</td>
+        <td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-[1.125rem] px-5 whitespace-nowrap text-right">Compra de frutas y verduras</td>
+    </tr>
+
+    <tr>
+        <td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-[1.125rem] px-5 whitespace-nowrap">₡900,000</td>
+        <td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-[1.125rem] px-5 whitespace-nowrap">JPS</td>
+        <td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-[1.125rem] px-5 whitespace-nowrap">Servicios</td>
+        <td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-[1.125rem] px-5 whitespace-nowrap">2026-01-25</td>
+        <td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-[1.125rem] px-5 whitespace-nowrap text-right">Mantenimiento del centro</td>
+    </tr>
+
+    <tr>
+        <td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-[1.125rem] px-5 whitespace-nowrap">₡300,000</td>
+        <td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-[1.125rem] px-5 whitespace-nowrap">RECURSOS PROPIOS</td>
+        <td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-[1.125rem] px-5 whitespace-nowrap">Otros</td>
+        <td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-[1.125rem] px-5 whitespace-nowrap">2026-01-27</td>
+        <td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-[1.125rem] px-5 whitespace-nowrap text-right">Material de limpieza</td>
+    </tr>
+
+    <tr>
+        <td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-[1.125rem] px-5 whitespace-nowrap">₡750,000</td>
+        <td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-[1.125rem] px-5 whitespace-nowrap">PANI</td>
+        <td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-[1.125rem] px-5 whitespace-nowrap">Suministros</td>
+        <td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-[1.125rem] px-5 whitespace-nowrap">2026-01-28</td>
+        <td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-[1.125rem] px-5 whitespace-nowrap text-right">Equipos educativos</td>
+    </tr>
+
+    										<tr>
+        										<td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-[1.125rem] px-5 whitespace-nowrap">₡400,000</td>
+        										<td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-[1.125rem] px-5 whitespace-nowrap">IMAS</td>
+        										<td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-[1.125rem] px-5 whitespace-nowrap">Alimentos</td>
+        										<td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-[1.125rem] px-5 whitespace-nowrap">2026-01-29</td>
+       											 <td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-[1.125rem] px-5 whitespace-nowrap text-right">Almuerzos diarios</td>
+    										</tr>
+
+    										<tr>
+        										<td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-[1.125rem] px-5 whitespace-nowrap">₡250,000</td>
+        										<td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-[1.125rem] px-5 whitespace-nowrap">RECURSOS PROPIOS</td>
+        										<td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-[1.125rem] px-5 whitespace-nowrap">Otros</td>
+       											<td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-[1.125rem] px-5 whitespace-nowrap">2026-01-30</td>
+        										<td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-[1.125rem] px-5 whitespace-nowrap text-right">Actividades recreativas</td>
+    										</tr>
+
+    										<tr>
+        										<td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-[1.125rem] px-5 whitespace-nowrap">₡650,000</td>
+        										<td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-[1.125rem] px-5 whitespace-nowrap">JPS</td>
+        										<td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-[1.125rem] px-5 whitespace-nowrap">Servicios</td>
+        										<td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-[1.125rem] px-5 whitespace-nowrap">2026-02-01</td>
+        										<td class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-[1.125rem] px-5 whitespace-nowrap text-right">Capacitación personal</td>
+   											 </tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	
         <!-- AQUI TERMINA SU CODIGO-->
 
 

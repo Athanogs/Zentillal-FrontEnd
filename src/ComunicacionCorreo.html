@@ -195,7 +195,7 @@
 							<span class="nav-text">Gestión de Usuarios</span>
 						</a>
 					</li>
-					<li><a href="Personal.html">
+					<li><a href="employee.html">
 						<div class="menu-icon">
 							<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path fill-rule="evenodd" clip-rule="evenodd" d="M15.8381 12.7317C16.4566 12.7317 16.9757 13.2422 16.8811 13.853C16.3263 17.4463 13.2502 20.1143 9.54009 20.1143C5.43536 20.1143 2.10834 16.7873 2.10834 12.6835C2.10834 9.30245 4.67693 6.15297 7.56878 5.44087C8.19018 5.28745 8.82702 5.72455 8.82702 6.36429C8.82702 10.6987 8.97272 11.8199 9.79579 12.4297C10.6189 13.0396 11.5867 12.7317 15.8381 12.7317Z" stroke="#888888" stroke-linecap="round" stroke-linejoin="round"/>
@@ -227,7 +227,7 @@
                             <span class="nav-text">Matricula e Inscripción</span>
                         </a>
                     </li>
-					<li><a href="Asistencia.html">
+					<li><a href="performance.html">
 						<div class="menu-icon">
 							<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path fill-rule="evenodd" clip-rule="evenodd" d="M14.9732 2.52102H7.0266C4.25735 2.52102 2.52118 4.48177 2.52118 7.25651V14.7438C2.52118 17.5186 4.2491 19.4793 7.0266 19.4793H14.9723C17.7507 19.4793 19.4795 17.5186 19.4795 14.7438V7.25651C19.4795 4.48177 17.7507 2.52102 14.9732 2.52102Z" stroke="#888888" stroke-linecap="round" stroke-linejoin="round"/>
@@ -249,7 +249,7 @@
 							<span class="nav-text">Gestión de Grupos</span>
 						</a>
 					</li>
-					<li><a href="Planificación_Actividades.html">
+					<li><a href="reports.html">
 						<div class="menu-icon">
 							<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path fill-rule="evenodd" clip-rule="evenodd" d="M13.5096 2.53165H7.41104C5.50437 2.52432 3.94146 4.04415 3.89654 5.9499V15.7701C3.85437 17.7071 5.38979 19.3121 7.32671 19.3552C7.35512 19.3552 7.38262 19.3561 7.41104 19.3552H14.7343C16.6538 19.2773 18.1663 17.6915 18.1525 15.7701V7.36798L13.5096 2.53165Z" stroke="#888888" stroke-linecap="round" stroke-linejoin="round"/>
@@ -258,7 +258,7 @@
 								<path d="M11.2229 10.6388H8.14655" stroke="#888888" stroke-linecap="round" stroke-linejoin="round"/>
 							</svg>
 						</div>	
-							<span class="nav-text">Planificación de Actividades</span>
+							<span class="nav-text">Gestión de Actividades</span>
 						</a>
 					</li>
 					<li>
@@ -275,8 +275,8 @@
                         </a>
  
                         <ul class="sub-menu">
-                            <li><a href="NotificacionesCorreo.html">Notificación a correo</a></li>
-                            <li><a href="task-summary.html">Noticias</a></li>
+                            <li><a href="ComunicacionCorreo.html">Notificación a correo</a></li>
+                            <li><a href="ListadoNoticias.html">Noticias</a></li>
                         </ul>
                     </li>
 					<li>
@@ -297,7 +297,7 @@
                             <li><a href="Gastos.html">Gastos</a></li>
                         </ul>
                     </li>
-					<li><a href="svg-icon.html">
+					<li><a href="CreacionAutorizacionRetiro.html">
 						<div class="menu-icon">
 							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path fill-rule="evenodd" clip-rule="evenodd" d="M14.7379 2.76181H8.08493C6.00493 2.75381 4.29993 4.41181 4.25093 6.49081V17.2038C4.20493 19.3168 5.87993 21.0678 7.99293 21.1148C8.02393 21.1148 8.05393 21.1158 8.08493 21.1148H16.0739C18.1679 21.0298 19.8179 19.2998 19.8029 17.2038V8.03781L14.7379 2.76181Z" stroke="#888888" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -325,6 +325,113 @@
 
 		<!-- AQUI COMIENZA SU CODIGO-->
 
+		<div class="content-body inbox-height min-h-[800px]">
+            <!-- row -->
+			<div class="container-fluid p-0">
+				<div class="row gx-0">
+                    <div class="w-full">
+                        <div class="card mb-0 h-auto border-0">
+                            <div class="sm:px-5 px-4">
+								<div class="row gx-0">
+									<!-- column -->
+									<div class="xl:w-1/6 col-xxl-3 lg:w-1/4	w-full email-left-body">
+										<div class="email-left-box relative dz-scroll overflow-y-scroll overflow-x-hidden pt-4 pl-0" id="email-left">
+											<div class="p-0">
+												<a href="email-compose.html" class="btn sm:py-[0.719rem] py-2.5 sm:px-[1.563rem] px-4 whitespace-nowrap bg-secondary dark:bg-primary sm:text-[0.938rem] text-[13px] font-medium rounded-md w-full block leading-5 text-white text-center btn-block"><i class="fa-solid fa-plus mr-2"></i>Crear notificación</a>
+											</div>
+											<div class="mail-list rounded mt-[2.188rem]">
+												<a href="email-inbox.html" class="list-group-item py-3 px-[1.0625rem] rounded-xl sm:text-[0.938rem] text-[13px] overflow-hidden mb-2.5 font-medium relative block duration-500 dark:bg-[#ffffff1a] dark:text-white dark:my-[13px] active"><i class="fa-regular fa-envelope align-middle pr-[1.125rem] text-lg"></i>Entrada <span class="bg-secondary text-[0.6875rem] px-2 py-[0.3125rem] inline-block leading-[0.6875rem] rounded text-white border border-secondary float-right">2</span> </a>
+
+												<a href="javascript:void(0);" class="list-group-item py-3 px-[1.0625rem] rounded-xl sm:text-[0.938rem] text-[13px] overflow-hidden mb-2.5 font-medium relative block duration-500 dark:bg-[#ffffff1a] dark:text-white dark:my-[13px]"><i class="fa-regular fa-paper-plane align-middle pr-[1.125rem] text-lg"></i>Salida</a> 
+
+												<a href="javascript:void(0);" class="list-group-item py-3 px-[1.0625rem] rounded-xl sm:text-[0.938rem] text-[13px] overflow-hidden mb-2.5 font-medium relative block duration-500 dark:bg-[#ffffff1a] dark:text-white dark:my-[13px]"><i class="fa-regular fa-star align-middle pr-[1.125rem] text-lg"></i>Favoritos </a>
+
+												<a href="javascript:void(0);" class="list-group-item py-3 px-[1.0625rem] rounded-xl sm:text-[0.938rem] text-[13px] overflow-hidden mb-2.5 font-medium relative block duration-500 dark:bg-[#ffffff1a] dark:text-white dark:my-[13px]"><i class="fa-regular fa-file align-middle pr-[1.125rem] text-lg"></i>Borradores</a>
+
+												<a href="javascript:void(0);" class="list-group-item py-3 px-[1.0625rem] rounded-xl sm:text-[0.938rem] text-[13px] overflow-hidden mb-2.5 font-medium relative block duration-500 dark:bg-[#ffffff1a] dark:text-white dark:my-[13px]">
+												<svg class="align-middle mr-[1.125rem] text-lg" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" >
+													<path d="M15.4425 10.0575L10.065 15.435C9.92569 15.5745 9.76026 15.6851 9.57816 15.7606C9.39606 15.8361
+													9.20087 15.8749 9.00375 15.8749C8.80663 15.8749 8.61144 15.8361 8.42934 15.7606C8.24724 15.6851 8.08181 15.5745 7.9425 15.435L1.5 9V1.5H9L15.4425
+													7.9425C15.7219 8.22354 15.8787 8.60372 15.8787 9C15.8787 9.39628 15.7219 9.77646 15.4425 10.0575Z"
+													stroke="#666666" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+													<path d="M5.25 5.25H5.268" stroke="#666666" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+												</svg>Importante</a>		
+												<a href="javascript:void(0);" class="list-group-item py-3 px-[1.0625rem] rounded-xl sm:text-[0.938rem] text-[13px] overflow-hidden mb-2.5 font-medium relative block duration-500 dark:bg-[#ffffff1a] dark:text-white dark:my-[13px]"><i class="fa-regular fa-clock align-middle pr-[1.125rem] text-lg"></i> Horarios</a>
+													
+												
+												<a href="javascript:void(0);" class="list-group-item py-3 px-[1.0625rem] rounded-xl sm:text-[0.938rem] text-[13px] overflow-hidden mb-2.5 font-medium relative block duration-500 dark:bg-[#ffffff1a] dark:text-white dark:my-[13px]">
+													<svg class="align-middle mr-[1.125rem] text-lg" width="15" height="15" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M5.5 8.25L11 13.75L16.5 8.25" stroke="#666666" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+													</svg>
+													Mover
+												</a>
+											</div>
+											<div class="mail-list rounded overflow-hidden mt-6">
+												<div class="intro-title flex justify-between p-4">
+													<h5>Categorias</h5>
+												</div>
+												<a href="email-inbox.html" class="list-group-item py-3 px-[1.0625rem] rounded-xl sm:text-[0.938rem] text-[13px] overflow-hidden font-medium relative block duration-500 dark:bg-[#ffffff1a] dark:text-white dark:my-[13px]">Actividades </a>
+												<a href="email-inbox.html" class="list-group-item py-3 px-[1.0625rem] rounded-xl sm:text-[0.938rem] text-[13px] overflow-hidden font-medium relative block duration-500 dark:bg-[#ffffff1a] dark:text-white dark:my-[13px]">Materiales </a>
+												<a href="email-inbox.html" class="list-group-item py-3 px-[1.0625rem] rounded-xl sm:text-[0.938rem] text-[13px] overflow-hidden font-medium relative block duration-500 dark:bg-[#ffffff1a] dark:text-white dark:my-[13px]">Reuniones Padres </a>
+												<a href="email-inbox.html" class="list-group-item py-3 px-[1.0625rem] rounded-xl sm:text-[0.938rem] text-[13px] overflow-hidden font-medium relative block duration-500 dark:bg-[#ffffff1a] dark:text-white dark:my-[13px]">Notificaciones Importantes </a>
+											</div>
+										</div>
+									</div>
+									<!-- /column -->
+									<div class="lg:w-3/4 xl:w-5/6 col-xxl-9">
+										<div class="email-right-box ml-0 ">
+											<div class="flex items-center justify-between px-3">
+												<h4 class="card-title sm:hidden mb-2 block">Email</h4>
+												<div class="email-tools-box float-right mb-2 sm:hidden inline-block w-10 h-10 leading-10 bg-primary-light text-primary rounded-md text-center duration-300 hover:text-white hover:bg-hover-primary">	
+													<i class="fa-solid fa-list-ul"></i>
+												</div>
+											</div>
+											<div class="compose-wrapper mt-4 dz-scroll" id="compose-content">
+												<div class="compose-content">
+													<form action="#">
+														<div class="mb-4">
+															<input type="text" class="form-control relative text-[13px] h-[2.813rem] border border-b-color block rounded-md py-1.5 px-3 duration-500 focus:border-primary dark:hover:border-b-color outline-none w-full bg-transparent" placeholder=" Para:">
+															<button 
+																type="button" 
+																onclick="window.location.href='BusquedaPadresNinos.html'"
+																class="mr-1 mb-2 inline-block rounded font-semibold py-[0.438rem] px-4 text-xs border border-primary text-primary hover:bg-primary hover:text-white duration-300 btn-xs">
+																Por nombre
+															</button>
+															<button 
+																type="button" 
+																onclick="window.location.href='SeleccionGrupo.html'"
+																class="mr-1 mb-2 inline-block rounded font-semibold py-[0.438rem] px-4 text-xs border border-success text-success hover:bg-success hover:text-white duration-300 btn-xs">
+																Por grupo
+															</button>
+														</div>
+														<div class="mb-4">
+															<input type="text" class="form-control relative text-[13px] h-[2.813rem] border border-b-color block rounded-md py-1.5 px-3 duration-500 focus:border-primary dark:hover:border-b-color outline-none w-full bg-transparent" placeholder=" Asunto:">
+														</div>
+														<div class="mb-4">
+															<textarea id="email-compose-editor" class="form-control relative text-[13px] h-auto min-h-auto border border-b-color block rounded-md p-3 duration-500 focus:border-primary dark:hover:border-b-color outline-none w-full resize-y bg-transparent" rows="5" placeholder="Ingrese la notificación aqui ..."></textarea>
+														</div>
+													</form>
+													<h5 class="my-4 text-[#6a707e]"><i class="fa fa-paperclip mr-2"></i> Adjuntos</h5>
+													<form action="#" class="dropzone border border-dashed border-[#DDDFE1] dark:border-[#444444] relative rounded-md bg-white dark:bg-[#1E1E1E] text-sm text-body-color">
+														<div class="fallback">
+															<input name="file" type="file" multiple>
+														</div>
+													</form>
+												</div>
+												<div class="text-start mt-4 mb-4">
+													<button class="btn xl:py-[0.719rem] py-2.5 xl:px-[1.563rem] px-4 m-1 duration-300 xl:text-[15px] text-[13px] font-medium rounded text-danger bg-danger-light leading-5 inline-block border border-danger-light btn-danger light hover:text-white hover:bg-danger" type="button"><span class="mr-2"><i class="fa fa-times"></i></span>Descartar</button>
+													<button class="btn btn-primary xl:py-[0.719rem] py-2.5 xl:px-[1.563rem] px-4 duration-300 xl:text-[15px] text-[13px] font-medium rounded text-white bg-primary leading-5 inline-block border border-primary hover:bg-hover-primary" type="button"><span class="mr-2"><i class="fa fa-paper-plane"></i></span>Enviar</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <!-- AQUI TERMINA SU CODIGO-->
 
