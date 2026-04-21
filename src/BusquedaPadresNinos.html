@@ -59,7 +59,6 @@
 
 	<!-- STYLE CSS -->
 	<link href="assets/css/style.css" rel="stylesheet">
-	<link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
 
 </head>
 
@@ -468,17 +467,10 @@
 
 
 		<!-- AQUI COMIENZA SU CODIGO-->
+
+		<!-- Content body start -->
 		<div class="content-body">
 			<!-- row -->
-			<div
-				class="page-titles dark:bg-[#242424] flex items-center justify-between relative border-b border-[#E6E6E6] dark:border-[#444444] flex-wrap z-[1] py-[0.6rem] sm:px-[1.95rem] px-[1.55rem] bg-white">
-				<ol class="text-[13px] flex items-center flex-wrap bg-transparent">
-					<li>
-						<h5 class="sm:text-[17px] text-[15px] mr-8">Matricula e inscripcion Centro Infantil Zentillal
-						</h5>
-					</li>
-				</ol>
-			</div>
 
 			<div class="container-fluid">
 				<div class="row">
@@ -486,502 +478,619 @@
 						<div class="card overflow-hidden relative">
 							<div class="card-body p-0">
 								<div class="overflow-x-auto active-projects style-1">
-									<div
-										class="tbl-caption flex justify-between items-center flex-wrap p-5 relative z-[2]">
-										<h4 class="max-sm:mb-2.5">Matricula</h4>
-										<div>
-											<a class="py-[5px] px-3 text-[13px] rounded text-white bg-primary leading-[18px] inline-block border border-primary btn-sm duration-500 hover:bg-hover-primary offcanvas-toggle"
-												data-dz-offcanvas="offcanvasExample2" href="#offcanvasExample">+ Nueva
-												Matricula</a>
 
-										</div>
+									<!-- Search Bar -->
+									<div class="p-5 border-b border-[#E6E6E6] dark:border-[#444444]">
+										<input type="text" id="searchInput" placeholder="Buscar por nombre ..."
+											class="w-full px-4 py-2 border border-[#E6E6E6] dark:border-[#444444] rounded bg-white dark:bg-[#1a1a1a] text-[13px] text-[#374557] dark:text-white focus:outline-none focus:border-primary" />
 									</div>
+
 									<table id="empoloyees-tblwrapper" class="table">
 										<thead>
 											<tr>
 												<th
 													class="text-[13px] py-2.5 pl-4 pr-0 bg-[#F0F4F9] text-[#374557] capitalize font-medium bg-none whitespace-nowrap text-left">
-													ID Matrícula</th>
+													Cedula Encargado</th>
 												<th
 													class="text-[13px] py-2.5 px-4 bg-[#F0F4F9] text-[#374557] capitalize font-medium bg-none whitespace-nowrap text-left">
-													ID Estudiante</th>
+													Encargado</th>
 												<th
 													class="text-[13px] py-2.5 px-4 bg-[#F0F4F9] text-[#374557] capitalize font-medium bg-none whitespace-nowrap text-left">
-													ID Padres</th>
+													Infante</th>
 												<th
 													class="text-[13px] py-2.5 px-4 bg-[#F0F4F9] text-[#374557] capitalize font-medium bg-none whitespace-nowrap text-left">
-													ID Grupo</th>
+													Correo Electrónico</th>
 												<th
 													class="text-[13px] py-2.5 px-4 bg-[#F0F4F9] text-[#374557] capitalize font-medium bg-none whitespace-nowrap text-left">
-													Fecha Matrícula</th>
+													Número de Contacto</th>
 												<th
 													class="text-[13px] py-2.5 px-4 bg-[#F0F4F9] text-[#374557] capitalize font-medium bg-none whitespace-nowrap text-left">
-													Estado Matrícula</th>
+													Género</th>
 												<th
 													class="text-[13px] py-2.5 px-4 bg-[#F0F4F9] text-[#374557] capitalize font-medium bg-none whitespace-nowrap text-left">
-													Foto</th>
-												<th
-													class="text-[13px] py-2.5 px-4 bg-[#F0F4F9] text-[#374557] capitalize font-medium bg-none whitespace-nowrap text-right">
-													Certificado Nacimiento</th>
-												<th
-													class="text-[13px] py-2.5 px-4 bg-[#F0F4F9] text-[#374557] capitalize font-medium bg-none whitespace-nowrap text-right">
-													Dictamen Médico</th>
-												<th
-													class="text-[13px] py-2.5 px-4 bg-[#F0F4F9] text-[#374557] capitalize font-medium bg-none whitespace-nowrap text-right">
-													Examen Visual</th>
-												<th
-													class="text-[13px] py-2.5 px-4 bg-[#F0F4F9] text-[#374557] capitalize font-medium bg-none whitespace-nowrap text-right">
-													Examen Auditivo</th>
-												<th
-													class="text-[13px] py-2.5 px-4 bg-[#F0F4F9] text-[#374557] capitalize font-medium bg-none whitespace-nowrap text-right">
-													Validación Antropométrica</th>
-												<th
-													class="text-[13px] py-2.5 px-4 bg-[#F0F4F9] text-[#374557] capitalize font-medium bg-none whitespace-nowrap text-right">
-													Registro Vacunas</th>
+													Provincia</th>
 												<th
 													class="text-[13px] py-2.5 px-4 bg-[#F0F4F9] text-[#374557] capitalize font-medium bg-none whitespace-nowrap text-right">
 													Estado</th>
-												<th
-													class="text-[13px] py-2.5 px-4 bg-[#F0F4F9] text-[#374557] capitalize font-medium whitespace-nowrap text-right">
-													Acciones</th>
 											</tr>
 										</thead>
-										<tbody>
-											<tr>
-												<td class="border-b py-2.5 pl-4">M-001</td>
-												<td class="border-b px-4">1-1234-5678</td>
-												<td class="border-b px-4">2-2345-6789</td>
-												<td class="border-b px-4">G-01</td>
-												<td class="border-b px-4">2025-02-10</td>
-												<td class="border-b px-4 text-success">Activo</td>
-												<td class="border-b px-4"><img src="assets/images/contacts/pic1.jpg"
-														class="w-10 h-10 rounded-md"></td>
-												<td class="border-b px-4 text-right">✔</td>
-												<td class="border-b px-4 text-right">✔</td>
-												<td class="border-b px-4 text-right">✔</td>
-												<td class="border-b px-4 text-right">✘</td>
-												<td class="border-b px-4 text-right">✔</td>
-												<td class="border-b px-4 text-right">✔</td>
-												<td class="border-b px-4 text-right"><span
-														class="text-xs px-3 py-1 bg-success-light text-success rounded">Activo</span>
+										<tbody id="tableBody">
+											<tr class="employee-row">
+												<td
+													class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 pl-4 pr-0 font-normal whitespace-nowrap">
+													<span
+														class="text-body-color dark:text-white text-[13px]">1-0582-1234</span>
 												</td>
-												<td class="border-b px-4 text-right">
-													<button
-														class="text-xs px-2 py-1 bg-primary text-white rounded mr-1">Editar</button>
-													<button
-														class="text-xs px-2 py-1 bg-info text-white rounded mr-1">Consultar</button>
-													<button
-														class="text-xs px-2 py-1 bg-secondary text-white rounded">Detalle</button>
+												<td
+													class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap employee-name">
+													<div class="products flex items-center">
+														<img src="assets/images/contacts/pic2.jpg"
+															class="inline-block mr-2.5 w-[2.813rem] min-w-[2.813rem] h-[2.813rem] rounded-md relative object-cover avatar-md"
+															alt="">
+														<div>
+															<h6 class="text-sm whitespace-nowrap">Antonio Lizano</h6>
+															<span
+																class="text-body-color dark:text-white text-xs">Padre</span>
+														</div>
+													</div>
 												</td>
-											</tr>
-
-											<tr>
-												<td class="border-b py-2.5 pl-4">M-002</td>
-												<td class="border-b px-4">1-2234-5678</td>
-												<td class="border-b px-4">2-3345-6789</td>
-												<td class="border-b px-4">G-02</td>
-												<td class="border-b px-4">2025-02-12</td>
-												<td class="border-b px-4 text-warning">Preinscrito</td>
-												<td class="border-b px-4"><img src="assets/images/contacts/pic2.jpg"
-														class="w-10 h-10 rounded-md"></td>
-												<td class="border-b px-4 text-right">✔</td>
-												<td class="border-b px-4 text-right">✘</td>
-												<td class="border-b px-4 text-right">✔</td>
-												<td class="border-b px-4 text-right">✘</td>
-												<td class="border-b px-4 text-right">✔</td>
-												<td class="border-b px-4 text-right">✘</td>
-												<td class="border-b px-4 text-right"><span
-														class="text-xs px-3 py-1 bg-danger-light text-danger rounded">Inactivo</span>
+												<td
+													class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap">
+													<span class="text-body-color dark:text-white text-[13px]">Diego
+														Lizano</span>
 												</td>
-												<td class="border-b px-4 text-right">
-													<button
-														class="text-xs px-2 py-1 bg-primary text-white rounded mr-1">Editar</button>
-													<button
-														class="text-xs px-2 py-1 bg-info text-white rounded mr-1">Consultar</button>
-													<button
-														class="text-xs px-2 py-1 bg-secondary text-white rounded">Detalle</button>
+												<td
+													class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap">
+													<span class="text-[13px] text-primary">antonioliz@gmail.com</span>
+												</td>
+												<td
+													class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap">
+													<span class="text-body-color dark:text-white text-[13px]">+506 8765
+														4321</span>
+												</td>
+												<td
+													class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap">
+													<span
+														class="text-body-color dark:text-white text-[13px]">Masculino</span>
+												</td>
+												<td
+													class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap">
+													<span class="text-body-color dark:text-white text-[13px]">San
+														José</span>
+												</td>
+												<td
+													class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap text-right">
+													<span
+														class="text-xs py-[5px] px-3 rounded font-medium leading-[1.5] text-success bg-success-light">Activo</span>
 												</td>
 											</tr>
-
-											<tr>
-												<td class="border-b py-2.5 pl-4">M-003</td>
-												<td class="border-b px-4">1-3234-5678</td>
-												<td class="border-b px-4">2-4345-6789</td>
-												<td class="border-b px-4">G-01</td>
-												<td class="border-b px-4">2025-02-15</td>
-												<td class="border-b px-4 text-info">Lista de espera</td>
-												<td class="border-b px-4"><img src="assets/images/contacts/pic3.jpg"
-														class="w-10 h-10 rounded-md"></td>
-												<td class="border-b px-4 text-right">✔</td>
-												<td class="border-b px-4 text-right">✔</td>
-												<td class="border-b px-4 text-right">✔</td>
-												<td class="border-b px-4 text-right">✔</td>
-												<td class="border-b px-4 text-right">✔</td>
-												<td class="border-b px-4 text-right">✔</td>
-												<td class="border-b px-4 text-right"><span
-														class="text-xs px-3 py-1 bg-success-light text-success rounded">Activo</span>
+											<tr class="employee-row">
+												<td
+													class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 pl-4 pr-0 font-normal whitespace-nowrap">
+													<span
+														class="text-body-color dark:text-white text-[13px]">2-1234-6789</span>
 												</td>
-												<td class="border-b px-4 text-right">
-													<button
-														class="text-xs px-2 py-1 bg-primary text-white rounded mr-1">Editar</button>
-													<button
-														class="text-xs px-2 py-1 bg-info text-white rounded mr-1">Consultar</button>
-													<button
-														class="text-xs px-2 py-1 bg-secondary text-white rounded">Detalle</button>
+												<td
+													class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap employee-name">
+													<div class="products flex items-center">
+														<img src="assets/images/contacts/pic1.jpg"
+															class="inline-block mr-2.5 w-[2.813rem] min-w-[2.813rem] h-[2.813rem] rounded-md relative object-cover avatar-md"
+															alt="">
+														<div>
+															<h6 class="text-sm whitespace-nowrap">Marta Rivera</h6>
+															<span
+																class="text-body-color dark:text-white text-xs">Madre</span>
+														</div>
+													</div>
 												</td>
-											</tr>
-
-											<tr>
-												<td class="border-b py-2.5 pl-4">M-004</td>
-												<td class="border-b px-4">1-4234-5678</td>
-												<td class="border-b px-4">2-5345-6789</td>
-												<td class="border-b px-4">G-03</td>
-												<td class="border-b px-4">2025-02-18</td>
-												<td class="border-b px-4 text-success">Activo</td>
-												<td class="border-b px-4"><img src="assets/images/contacts/pic1.jpg"
-														class="w-10 h-10 rounded-md"></td>
-												<td class="border-b px-4 text-right">✔</td>
-												<td class="border-b px-4 text-right">✔</td>
-												<td class="border-b px-4 text-right">✘</td>
-												<td class="border-b px-4 text-right">✘</td>
-												<td class="border-b px-4 text-right">✔</td>
-												<td class="border-b px-4 text-right">✔</td>
-												<td class="border-b px-4 text-right"><span
-														class="text-xs px-3 py-1 bg-success-light text-success rounded">Activo</span>
+												<td
+													class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap">
+													<span class="text-body-color dark:text-white text-[13px]">María
+														Rivera</span></td>
+												<td
+													class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap">
+													<span class="text-[13px] text-primary">marta.rivera@gmail.com</span>
 												</td>
-												<td class="border-b px-4 text-right">
-													<button
-														class="text-xs px-2 py-1 bg-primary text-white rounded mr-1">Editar</button>
-													<button
-														class="text-xs px-2 py-1 bg-info text-white rounded mr-1">Consultar</button>
-													<button
-														class="text-xs px-2 py-1 bg-secondary text-white rounded">Detalle</button>
+												<td
+													class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap">
+													<span class="text-body-color dark:text-white text-[13px]">+506 9876
+														5432</span>
+												</td>
+												<td
+													class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap">
+													<span
+														class="text-body-color dark:text-white text-[13px]">Femenino</span>
+												</td>
+												<td
+													class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap">
+													<span
+														class="text-body-color dark:text-white text-[13px]">Alajuela</span>
+												</td>
+												<td
+													class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap text-right">
+													<span
+														class="text-xs py-[5px] px-3 rounded font-medium leading-[1.5] text-danger bg-danger-light">Inactivo</span>
 												</td>
 											</tr>
-
-											<tr>
-												<td class="border-b py-2.5 pl-4">M-005</td>
-												<td class="border-b px-4">1-5234-5678</td>
-												<td class="border-b px-4">2-6345-6789</td>
-												<td class="border-b px-4">G-02</td>
-												<td class="border-b px-4">2025-02-20</td>
-												<td class="border-b px-4 text-danger">Retirado</td>
-												<td class="border-b px-4"><img src="assets/images/contacts/pic2.jpg"
-														class="w-10 h-10 rounded-md"></td>
-												<td class="border-b px-4 text-right">✘</td>
-												<td class="border-b px-4 text-right">✘</td>
-												<td class="border-b px-4 text-right">✘</td>
-												<td class="border-b px-4 text-right">✘</td>
-												<td class="border-b px-4 text-right">✘</td>
-												<td class="border-b px-4 text-right">✘</td>
-												<td class="border-b px-4 text-right"><span
-														class="text-xs px-3 py-1 bg-danger-light text-danger rounded">Inactivo</span>
+											<tr class="employee-row">
+												<td
+													class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 pl-4 pr-0 font-normal whitespace-nowrap">
+													<span
+														class="text-body-color dark:text-white text-[13px]">3-5678-2345</span>
 												</td>
-												<td class="border-b px-4 text-right">
-													<button
-														class="text-xs px-2 py-1 bg-primary text-white rounded mr-1">Editar</button>
-													<button
-														class="text-xs px-2 py-1 bg-info text-white rounded mr-1">Consultar</button>
-													<button
-														class="text-xs px-2 py-1 bg-secondary text-white rounded">Detalle</button>
+												<td
+													class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap employee-name">
+													<div class="products flex items-center">
+														<img src="assets/images/contacts/pic3.jpg"
+															class="inline-block mr-2.5 w-[2.813rem] min-w-[2.813rem] h-[2.813rem] rounded-md relative object-cover avatar-md"
+															alt="">
+														<div>
+															<h6 class="text-sm whitespace-nowrap">Carlos Mora</h6>
+															<span
+																class="text-body-color dark:text-white text-xs">Padre</span>
+														</div>
+													</div>
 												</td>
-											</tr>
-
-											<tr>
-												<td class="border-b py-2.5 pl-4">M-006</td>
-												<td class="border-b px-4">1-6234-5678</td>
-												<td class="border-b px-4">2-7345-6789</td>
-												<td class="border-b px-4">G-01</td>
-												<td class="border-b px-4">2025-02-22</td>
-												<td class="border-b px-4 text-success">Activo</td>
-												<td class="border-b px-4"><img src="assets/images/contacts/pic3.jpg"
-														class="w-10 h-10 rounded-md"></td>
-												<td class="border-b px-4 text-right">✔</td>
-												<td class="border-b px-4 text-right">✔</td>
-												<td class="border-b px-4 text-right">✔</td>
-												<td class="border-b px-4 text-right">✔</td>
-												<td class="border-b px-4 text-right">✔</td>
-												<td class="border-b px-4 text-right">✔</td>
-												<td class="border-b px-4 text-right"><span
-														class="text-xs px-3 py-1 bg-success-light text-success rounded">Activo</span>
+												<td
+													class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap">
+													<span class="text-body-color dark:text-white text-[13px]">Lucas
+														Mora</span></td>
+												<td
+													class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap">
+													<span class="text-[13px] text-primary">carlos.mora@gmail.com</span>
 												</td>
-												<td class="border-b px-4 text-right">
-													<button
-														class="text-xs px-2 py-1 bg-primary text-white rounded mr-1">Editar</button>
-													<button
-														class="text-xs px-2 py-1 bg-info text-white rounded mr-1">Consultar</button>
-													<button
-														class="text-xs px-2 py-1 bg-secondary text-white rounded">Detalle</button>
+												<td
+													class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap">
+													<span class="text-body-color dark:text-white text-[13px]">+506 7654
+														3210</span>
+												</td>
+												<td
+													class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap">
+													<span
+														class="text-body-color dark:text-white text-[13px]">Masculino</span>
+												</td>
+												<td
+													class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap">
+													<span
+														class="text-body-color dark:text-white text-[13px]">Cartago</span>
+												</td>
+												<td
+													class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap text-right">
+													<span
+														class="text-xs py-[5px] px-3 rounded font-medium leading-[1.5] text-success bg-success-light">Activo</span>
 												</td>
 											</tr>
-
-											<tr>
-												<td class="border-b py-2.5 pl-4">M-007</td>
-												<td class="border-b px-4">1-7234-5678</td>
-												<td class="border-b px-4">2-8345-6789</td>
-												<td class="border-b px-4">G-02</td>
-												<td class="border-b px-4">2025-02-25</td>
-												<td class="border-b px-4 text-info">Lista de espera</td>
-												<td class="border-b px-4"><img src="assets/images/contacts/pic1.jpg"
-														class="w-10 h-10 rounded-md"></td>
-												<td class="border-b px-4 text-right">✔</td>
-												<td class="border-b px-4 text-right">✔</td>
-												<td class="border-b px-4 text-right">✘</td>
-												<td class="border-b px-4 text-right">✔</td>
-												<td class="border-b px-4 text-right">✔</td>
-												<td class="border-b px-4 text-right">✔</td>
-												<td class="border-b px-4 text-right"><span
-														class="text-xs px-3 py-1 bg-danger-light text-danger rounded">Inactivo</span>
+											<tr class="employee-row">
+												<td
+													class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 pl-4 pr-0 font-normal whitespace-nowrap">
+													<span
+														class="text-body-color dark:text-white text-[13px]">4-9012-3456</span>
 												</td>
-												<td class="border-b px-4 text-right">
-													<button
-														class="text-xs px-2 py-1 bg-primary text-white rounded mr-1">Editar</button>
-													<button
-														class="text-xs px-2 py-1 bg-info text-white rounded mr-1">Consultar</button>
-													<button
-														class="text-xs px-2 py-1 bg-secondary text-white rounded">Detalle</button>
+												<td
+													class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap employee-name">
+													<div class="products flex items-center">
+														<img src="assets/images/contacts/pic2.jpg"
+															class="inline-block mr-2.5 w-[2.813rem] min-w-[2.813rem] h-[2.813rem] rounded-md relative object-cover avatar-md"
+															alt="">
+														<div>
+															<h6 class="text-sm whitespace-nowrap">Sofía Durán</h6>
+															<span
+																class="text-body-color dark:text-white text-xs">Madre</span>
+														</div>
+													</div>
 												</td>
-											</tr>
-
-											<tr>
-												<td class="border-b py-2.5 pl-4">M-008</td>
-												<td class="border-b px-4">1-8234-5678</td>
-												<td class="border-b px-4">2-9345-6789</td>
-												<td class="border-b px-4">G-03</td>
-												<td class="border-b px-4">2025-03-01</td>
-												<td class="border-b px-4 text-warning">Preinscrito</td>
-												<td class="border-b px-4"><img src="assets/images/contacts/pic2.jpg"
-														class="w-10 h-10 rounded-md"></td>
-												<td class="border-b px-4 text-right">✔</td>
-												<td class="border-b px-4 text-right">✘</td>
-												<td class="border-b px-4 text-right">✘</td>
-												<td class="border-b px-4 text-right">✘</td>
-												<td class="border-b px-4 text-right">✔</td>
-												<td class="border-b px-4 text-right">✘</td>
-												<td class="border-b px-4 text-right"><span
-														class="text-xs px-3 py-1 bg-danger-light text-danger rounded">Inactivo</span>
+												<td
+													class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap">
+													<span class="text-body-color dark:text-white text-[13px]">Valentina
+														Durán</span>
 												</td>
-												<td class="border-b px-4 text-right">
-													<button
-														class="text-xs px-2 py-1 bg-primary text-white rounded mr-1">Editar</button>
-													<button
-														class="text-xs px-2 py-1 bg-info text-white rounded mr-1">Consultar</button>
-													<button
-														class="text-xs px-2 py-1 bg-secondary text-white rounded">Detalle</button>
+												<td
+													class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap">
+													<span class="text-[13px] text-primary">sofia.duran@gmail.com</span>
+												</td>
+												<td
+													class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap">
+													<span class="text-body-color dark:text-white text-[13px]">+506 6543
+														2109</span>
+												</td>
+												<td
+													class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap">
+													<span
+														class="text-body-color dark:text-white text-[13px]">Femenino</span>
+												</td>
+												<td
+													class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap">
+													<span
+														class="text-body-color dark:text-white text-[13px]">Heredia</span>
+												</td>
+												<td
+													class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap text-right">
+													<span
+														class="text-xs py-[5px] px-3 rounded font-medium leading-[1.5] text-success bg-success-light">Activo</span>
 												</td>
 											</tr>
-
-											<tr>
-												<td class="border-b py-2.5 pl-4">M-009</td>
-												<td class="border-b px-4">1-9234-5678</td>
-												<td class="border-b px-4">3-1345-6789</td>
-												<td class="border-b px-4">G-01</td>
-												<td class="border-b px-4">2025-03-05</td>
-												<td class="border-b px-4 text-success">Activo</td>
-												<td class="border-b px-4"><img src="assets/images/contacts/pic1.jpg"
-														class="w-10 h-10 rounded-md"></td>
-												<td class="border-b px-4 text-right">✔</td>
-												<td class="border-b px-4 text-right">✔</td>
-												<td class="border-b px-4 text-right">✔</td>
-												<td class="border-b px-4 text-right">✔</td>
-												<td class="border-b px-4 text-right">✔</td>
-												<td class="border-b px-4 text-right">✔</td>
-												<td class="border-b px-4 text-right"><span
-														class="text-xs px-3 py-1 bg-success-light text-success rounded">Activo</span>
+											<tr class="employee-row">
+												<td
+													class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 pl-4 pr-0 font-normal whitespace-nowrap">
+													<span
+														class="text-body-color dark:text-white text-[13px]">5-3456-7890</span>
 												</td>
-												<td class="border-b px-4 text-right">
-													<button
-														class="text-xs px-2 py-1 bg-primary text-white rounded mr-1">Editar</button>
-													<button
-														class="text-xs px-2 py-1 bg-info text-white rounded mr-1">Consultar</button>
-													<button
-														class="text-xs px-2 py-1 bg-secondary text-white rounded">Detalle</button>
+												<td
+													class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap employee-name">
+													<div class="products flex items-center">
+														<img src="assets/images/contacts/pic1.jpg"
+															class="inline-block mr-2.5 w-[2.813rem] min-w-[2.813rem] h-[2.813rem] rounded-md relative object-cover avatar-md"
+															alt="">
+														<div>
+															<h6 class="text-sm whitespace-nowrap">Roberto Campos</h6>
+															<span
+																class="text-body-color dark:text-white text-xs">Padre</span>
+														</div>
+													</div>
+												</td>
+												<td
+													class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap">
+													<span class="text-body-color dark:text-white text-[13px]">Gabriel
+														Campos</span></td>
+												<td
+													class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap">
+													<span
+														class="text-[13px] text-primary">roberto.campos@gmail.com</span>
+												</td>
+												<td
+													class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap">
+													<span class="text-body-color dark:text-white text-[13px]">+506 5432
+														1098</span>
+												</td>
+												<td
+													class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap">
+													<span
+														class="text-body-color dark:text-white text-[13px]">Masculino</span>
+												</td>
+												<td
+													class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap">
+													<span
+														class="text-body-color dark:text-white text-[13px]">Limón</span>
+												</td>
+												<td
+													class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap text-right">
+													<span
+														class="text-xs py-[5px] px-3 rounded font-medium leading-[1.5] text-success bg-success-light">Activo</span>
 												</td>
 											</tr>
-
-											<tr>
-												<td class="border-b py-2.5 pl-4">M-010</td>
-												<td class="border-b px-4">2-1234-5678</td>
-												<td class="border-b px-4">3-2345-6789</td>
-												<td class="border-b px-4">G-02</td>
-												<td class="border-b px-4">2025-03-10</td>
-												<td class="border-b px-4 text-info">Lista de espera</td>
-												<td class="border-b px-4"><img src="assets/images/contacts/pic3.jpg"
-														class="w-10 h-10 rounded-md"></td>
-												<td class="border-b px-4 text-right">✔</td>
-												<td class="border-b px-4 text-right">✔</td>
-												<td class="border-b px-4 text-right">✔</td>
-												<td class="border-b px-4 text-right">✘</td>
-												<td class="border-b px-4 text-right">✔</td>
-												<td class="border-b px-4 text-right">✔</td>
-												<td class="border-b px-4 text-right"><span
-														class="text-xs px-3 py-1 bg-success-light text-success rounded">Activo</span>
+											<tr class="employee-row">
+												<td
+													class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 pl-4 pr-0 font-normal whitespace-nowrap">
+													<span
+														class="text-body-color dark:text-white text-[13px]">6-7890-1234</span>
 												</td>
-												<td class="border-b px-4 text-right">
-													<button
-														class="text-xs px-2 py-1 bg-primary text-white rounded mr-1">Editar</button>
-													<button
-														class="text-xs px-2 py-1 bg-info text-white rounded mr-1">Consultar</button>
-													<button
-														class="text-xs px-2 py-1 bg-secondary text-white rounded">Detalle</button>
+												<td
+													class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap employee-name">
+													<div class="products flex items-center">
+														<img src="assets/images/contacts/pic3.jpg"
+															class="inline-block mr-2.5 w-[2.813rem] min-w-[2.813rem] h-[2.813rem] rounded-md relative object-cover avatar-md"
+															alt="">
+														<div>
+															<h6 class="text-sm whitespace-nowrap">Patricia Soto</h6>
+															<span
+																class="text-body-color dark:text-white text-xs">Madre</span>
+														</div>
+													</div>
+												</td>
+												<td
+													class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap">
+													<span class="text-body-color dark:text-white text-[13px]">Natalia
+														Soto</span></td>
+												<td
+													class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap">
+													<span
+														class="text-[13px] text-primary">patricia.soto@gmail.com</span>
+												</td>
+												<td
+													class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap">
+													<span class="text-body-color dark:text-white text-[13px]">+506 4321
+														0987</span>
+												</td>
+												<td
+													class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap">
+													<span
+														class="text-body-color dark:text-white text-[13px]">Femenino</span>
+												</td>
+												<td
+													class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap">
+													<span
+														class="text-body-color dark:text-white text-[13px]">Puntarenas</span>
+												</td>
+												<td
+													class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap text-right">
+													<span
+														class="text-xs py-[5px] px-3 rounded font-medium leading-[1.5] text-danger bg-danger-light">Inactivo</span>
+												</td>
+											</tr>
+											<tr class="employee-row">
+												<td
+													class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 pl-4 pr-0 font-normal whitespace-nowrap">
+													<span
+														class="text-body-color dark:text-white text-[13px]">7-2345-6789</span>
+												</td>
+												<td
+													class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap employee-name">
+													<div class="products flex items-center">
+														<img src="assets/images/contacts/pic2.jpg"
+															class="inline-block mr-2.5 w-[2.813rem] min-w-[2.813rem] h-[2.813rem] rounded-md relative object-cover avatar-md"
+															alt="">
+														<div>
+															<h6 class="text-sm whitespace-nowrap">Francisco Vega</h6>
+															<span
+																class="text-body-color dark:text-white text-xs">Padre</span>
+														</div>
+													</div>
+												</td>
+												<td
+													class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap">
+													<span class="text-body-color dark:text-white text-[13px]">Alejandro
+														Vega</span></td>
+												<td
+													class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap">
+													<span
+														class="text-[13px] text-primary">francisco.vega@gmail.com</span>
+												</td>
+												<td
+													class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap">
+													<span class="text-body-color dark:text-white text-[13px]">+506 3210
+														9876</span>
+												</td>
+												<td
+													class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap">
+													<span
+														class="text-body-color dark:text-white text-[13px]">Masculino</span>
+												</td>
+												<td
+													class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap">
+													<span
+														class="text-body-color dark:text-white text-[13px]">Guanacaste</span>
+												</td>
+												<td
+													class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap text-right">
+													<span
+														class="text-xs py-[5px] px-3 rounded font-medium leading-[1.5] text-success bg-success-light">Activo</span>
+												</td>
+											</tr>
+											<tr class="employee-row">
+												<td
+													class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 pl-4 pr-0 font-normal whitespace-nowrap">
+													<span
+														class="text-body-color dark:text-white text-[13px]">5-6789-0123</span>
+												</td>
+												<td
+													class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap employee-name">
+													<div class="products flex items-center">
+														<img src="assets/images/contacts/pic1.jpg"
+															class="inline-block mr-2.5 w-[2.813rem] min-w-[2.813rem] h-[2.813rem] rounded-md relative object-cover avatar-md"
+															alt="">
+														<div>
+															<h6 class="text-sm whitespace-nowrap">Cristina Jiménez</h6>
+															<span
+																class="text-body-color dark:text-white text-xs">Madre</span>
+														</div>
+													</div>
+												</td>
+												<td
+													class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap">
+													<span class="text-body-color dark:text-white text-[13px]">Emilia
+														Jiménez</span></td>
+												<td
+													class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap">
+													<span
+														class="text-[13px] text-primary">cristina.jimenez@gmail.com</span>
+												</td>
+												<td
+													class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap">
+													<span class="text-body-color dark:text-white text-[13px]">+506 1098
+														7654</span>
+												</td>
+												<td
+													class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap">
+													<span
+														class="text-body-color dark:text-white text-[13px]">Femenino</span>
+												</td>
+												<td
+													class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap">
+													<span class="text-body-color dark:text-white text-[13px]">La
+														Fortuna</span>
+												</td>
+												<td
+													class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap text-right">
+													<span
+														class="text-xs py-[5px] px-3 rounded font-medium leading-[1.5] text-danger bg-danger-light">Inactivo</span>
+												</td>
+											</tr>
+											<tr class="employee-row">
+												<td
+													class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 pl-4 pr-0 font-normal whitespace-nowrap">
+													<span
+														class="text-body-color dark:text-white text-[13px]">2-0123-4567</span>
+												</td>
+												<td
+													class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap employee-name">
+													<div class="products flex items-center">
+														<img src="assets/images/contacts/pic3.jpg"
+															class="inline-block mr-2.5 w-[2.813rem] min-w-[2.813rem] h-[2.813rem] rounded-md relative object-cover avatar-md"
+															alt="">
+														<div>
+															<h6 class="text-sm whitespace-nowrap">Miguel Acosta</h6>
+															<span
+																class="text-body-color dark:text-white text-xs">Padre</span>
+														</div>
+													</div>
+												</td>
+												<td
+													class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap">
+													<span class="text-body-color dark:text-white text-[13px]">Santiago
+														Acosta</span></td>
+												<td
+													class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap">
+													<span
+														class="text-[13px] text-primary">miguel.acosta@gmail.com</span>
+												</td>
+												<td
+													class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap">
+													<span class="text-body-color dark:text-white text-[13px]">+506 9876
+														5432</span>
+												</td>
+												<td
+													class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap">
+													<span
+														class="text-body-color dark:text-white text-[13px]">Masculino</span>
+												</td>
+												<td
+													class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap">
+													<span class="text-body-color dark:text-white text-[13px]">San
+														Isidro</span>
+												</td>
+												<td
+													class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap text-right">
+													<span
+														class="text-xs py-[5px] px-3 rounded font-medium leading-[1.5] text-success bg-success-light">Activo</span>
+												</td>
+											</tr>
+											<tr class="employee-row">
+												<td
+													class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 pl-4 pr-0 font-normal whitespace-nowrap">
+													<span
+														class="text-body-color dark:text-white text-[13px]">1-4567-8901</span>
+												</td>
+												<td
+													class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap employee-name">
+													<div class="products flex items-center">
+														<img src="assets/images/contacts/pic2.jpg"
+															class="inline-block mr-2.5 w-[2.813rem] min-w-[2.813rem] h-[2.813rem] rounded-md relative object-cover avatar-md"
+															alt="">
+														<div>
+															<h6 class="text-sm whitespace-nowrap">Verónica López</h6>
+															<span
+																class="text-body-color dark:text-white text-xs">Madre</span>
+														</div>
+													</div>
+												</td>
+												<td
+													class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap">
+													<span class="text-body-color dark:text-white text-[13px]">Priscila
+														López</span></td>
+												<td
+													class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap">
+													<span
+														class="text-[13px] text-primary">veronica.lopez@gmail.com</span>
+												</td>
+												<td
+													class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap">
+													<span class="text-body-color dark:text-white text-[13px]">+506 7654
+														3210</span>
+												</td>
+												<td
+													class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap">
+													<span
+														class="text-body-color dark:text-white text-[13px]">Femenino</span>
+												</td>
+												<td
+													class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap">
+													<span class="text-body-color dark:text-white text-[13px]">Puerto
+														Viejo</span>
+												</td>
+												<td
+													class="border-b border-[#E6E6E6] dark:border-[#444444] text-[13px] py-2.5 px-4 font-normal whitespace-nowrap text-right">
+													<span
+														class="text-xs py-[5px] px-3 rounded font-medium leading-[1.5] text-danger bg-danger-light">Inactivo</span>
 												</td>
 											</tr>
 										</tbody>
+									</table>
 
-										<div class="fixed top-0 right-0 flex flex-col xl:w-[800px] md:w-[500px] w-[350px] h-[100vh] z-[1045] bg-white dark:bg-[#1E1E1E] text-body-color duration-500 ease-in-out offcanvas is-closed"
-											id="offcanvasExample2">
-											<div class="ml-4 flex items-center justify-between p-4">
-												<h5 class="modal-title" id="#gridSystemModal">Nueva Matricula</h5>
-												<button type="button"
-													class="offcanvas-close h-6 w-6 box-content bg-danger-light rounded-md text-lg mr-4 p-2 opacity-50 hover:opacity-100 text-red">
-													<i class="fa-solid fa-xmark"></i>
-												</button>
-											</div>
+									<div class="text-center">
+										<button type="button" onclick="window.location.href='ComunicacionCorreo.html'"
+											class="mr-1 mb-2 inline-block rounded font-medium xl:text-[15px] text-xs leading-5 xl:py-[0.719rem] xl:px-[1.563rem] py-2.5 px-4 border border-primary text-white bg-primary hover:bg-hover-primary hover:border-hover-primary duration-300">
+											Volver a Creación de notificaciones
+										</button>
+									</div>
 
-											<div class="p-4 overflow-y-auto overflow-x-hidden dz-scroll">
-												<div class="container-fluid px-[15px] py-0">
-													<div class="mb-4">
-														<label for="formFile"
-															class="form-label text-body-color dark:text-white">Suba aqui
-															los archivos correspondientes</label>
-														<input
-															class="relative text-[13px] h-[2.813rem] dark:file:bg-[#1E1E1E] file:h-[2.813rem] file:outline-none file:text-body-color file:py-[0.175rem] file:pl-2.5 file:pr-3 file:bg-[#f8f9fa] border border-b-color file:border-b-color block rounded-md text-body-color duration-500 focus:border-primary dark:hover:border-b-color outline-none w-full"
-															type="file" id="formFile">
-													</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
-													<div>
-														<div class="row">
-															<div class="xl:w-1/2 mb-4">
-																<label for="exampleFormControlInput1"
-																	class="form-label">ID Matrícula<span
-																		class="text-danger">*</span></label>
-																<input type="text"
-																	class="form-control relative text-[13px] text-body-color h-[2.813rem] border border-b-color block rounded-md py-1.5 px-3 duration-500 focus:border-primary dark:hover:border-b-color outline-none w-full"
-																	id="exampleFormControlInput1" placeholder="">
-															</div>
+		<script>
+			// Search functionality
+			document.getElementById('searchInput').addEventListener('keyup', function (e) {
+				const searchTerm = e.target.value.toLowerCase();
+				const rows = document.querySelectorAll('.employee-row');
 
-															<div class="xl:w-1/2 mb-4">
-																<label for="exampleFormControlInput1"
-																	class="form-label">ID Estudiante<span
-																		class="text-danger">*</span></label>
-																<input type="text"
-																	class="form-control relative text-[13px] text-body-color h-[2.813rem] border border-b-color block rounded-md py-1.5 px-3 duration-500 focus:border-primary dark:hover:border-b-color outline-none w-full"
-																	id="exampleFormControlInput1" placeholder="">
-															</div>
+				rows.forEach(row => {
+					const nameCell = row.querySelector('.employee-name h6');
+					const name = nameCell ? nameCell.textContent.toLowerCase() : '';
 
-															<div class="xl:w-1/2 mb-4">
-																<label for="exampleFormControlInput1"
-																	class="form-label">ID Padres<span
-																		class="text-danger">*</span></label>
-																<input type="text"
-																	class="form-control relative text-[13px] text-body-color h-[2.813rem] border border-b-color block rounded-md py-1.5 px-3 duration-500 focus:border-primary dark:hover:border-b-color outline-none w-full"
-																	id="exampleFormControlInput1" placeholder="">
-															</div>
+					if (name.includes(searchTerm)) {
+						row.style.display = '';
+					} else {
+						row.style.display = 'none';
+					}
+				});
+			});
+		</script>
 
-															<div class="xl:w-1/2 mb-4">
-																<label for="exampleFormControlInput1"
-																	class="form-label">ID Grupo<span
-																		class="text-danger">*</span></label>
-																<input type="text"
-																	class="form-control relative text-[13px] text-body-color h-[2.813rem] border border-b-color block rounded-md py-1.5 px-3 duration-500 focus:border-primary dark:hover:border-b-color outline-none w-full"
-																	id="exampleFormControlInput1" placeholder="">
-															</div>
+		<script>
+			document.addEventListener('DOMContentLoaded', function () {
+				const dtButtons = document.querySelector('.dt-buttons');
+				if (dtButtons) {
+					dtButtons.remove();
+				}
+			});
+		</script>
 
-															<div class="xl:w-1/2 mb-4">
-																<label class="form-label">Fecha Matrícula <span
-																		class="text-danger">*</span></label>
-																<input type="datetime-local"
-																	class="form-control relative text-[13px] text-body-color h-[2.813rem] border border-b-color block rounded-md py-1.5 px-3 duration-500 focus:border-primary dark:hover:border-b-color outline-none w-full"
-																	id="exampleFormControlInput1" placeholder="">
-															</div>
-
-
-															<div class="xl:w-1/2 mb-4">
-																<label class="form-label">Estado de Matricula<span
-																		class="text-danger">*</span></label>
-																<select
-																	class="nice-select style-1 py-1.5 px-3 bg-transparent text-[13px] font-normal outline-none relative focus:ring-0 border border-b-color text-[#a5a5a5] h-[2.813rem] leading-[1.813rem]">
-																	<option data-display="Select">Seleccione</option>
-																	<option value="html">Preinscrito</option>
-																	<option value="css">Activo</option>
-																	<option value="javascript">Lista de espera</option>
-																	<option value="javascript">Retirado</option>
-																</select>
-															</div>
-
-															<div class="xl:w-1/2 mb-4">
-																<label class="form-label">Estado<span
-																		class="text-danger">*</span></label>
-																<select
-																	class="nice-select style-1 py-1.5 px-3 bg-transparent text-[13px] font-normal outline-none relative focus:ring-0 border border-b-color text-[#a5a5a5] h-[2.813rem] leading-[1.813rem]">
-																	<option data-display="Select">Seleccione</option>
-																	<option value="html">Inactivo</option>
-																	<option value="css">Activo</option>
-																</select>
-															</div>
-
-															<div>
-																<button
-																	class="btn xl:py-[0.719rem] py-2.5 xl:px-[1.563rem] px-4 duration-300 xl:text-[15px] text-[13px] font-medium rounded text-danger bg-danger-light leading-5 inline-block border border-danger-light btn-danger light hover:text-white hover:bg-danger offcanvas-close">Cancelar</button>
-																<button
-																	class="btn btn-primary xl:py-[0.719rem] py-2.5 xl:px-[1.563rem] px-4 duration-300 xl:text-[15px] text-[13px] font-medium rounded text-white bg-primary leading-5 inline-block border border-primary hover:bg-hover-primary offcanvas-close">Guardar</button>
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-
-
-											<!-- AQUI TERMINA SU CODIGO-->
+		<!-- AQUI TERMINA SU CODIGO-->
 
 
 
-											<!-- Footer start -->
-											<div
-												class="footer dark:bg-[#242424] mt-4 border-t border-[#E6E6E6] dark:border-[#444444] text-[13px] font-normal">
-												<div class="copyright p-[0.9375rem]">
-													<p
-														class="text-center text-[#918f8f] dark:text-[#ffffffb3] sm:text-sm text-xs leading-[1.8]">
-														Copyright © Centro Infantil de Zentillal <a
-															href="https://dexignzone.com/" target="_blank"
-															class="text-primary">Todos los derechos reservados</a> 2024
-													</p>
-												</div>
-											</div>
-											<!-- Footer end -->
-										</div>
-										<!-- Main wrapper end -->
 
-										<script src="assets/vendor/global/global.min.js"></script>
-										<script src="assets/vendor/chart.js/chart.bundle.min.js"></script>
-										<script src="assets/vendor/apexchart/apexchart.min.js"></script>
+		<!-- Footer start -->
+		<div
+			class="footer dark:bg-[#242424] mt-4 border-t border-[#E6E6E6] dark:border-[#444444] text-[13px] font-normal">
+			<div class="copyright p-[0.9375rem]">
+				<p class="text-center text-[#918f8f] dark:text-[#ffffffb3] sm:text-sm text-xs leading-[1.8]">Copyright ©
+					Centro Infantil de Zentillal <a href="https://dexignzone.com/" target="_blank"
+						class="text-primary">Todos los derechos reservados</a> 2024</p>
+			</div>
+		</div>
+		<!-- Footer end -->
+	</div>
+	<!-- Main wrapper end -->
 
-										<!-- Dashboard 1 -->
-										<script src="assets/js/dashboard/dashboard-1.js"></script>
-										<script src="assets/vendor/draggable/draggable.js"></script>
+	<script src="assets/vendor/global/global.min.js"></script>
+	<script src="assets/vendor/chart.js/chart.bundle.min.js"></script>
+	<script src="assets/vendor/apexchart/apexchart.min.js"></script>
 
-										<script src="assets/vendor/datatables/js/jquery.dataTables.min.js"></script>
-										<script src="assets/vendor/datatables/js/dataTables.buttons.min.js"></script>
-										<script src="assets/vendor/datatables/js/buttons.html5.min.js"></script>
-										<script src="assets/vendor/datatables/js/jszip.min.js"></script>
-										<script src="assets/js/plugins-init/datatables.init.min.js"></script>
-										<script src="assets/vendor/tagify/dist/tagify.min.js"></script><!-- tagify -->
-										<script src="assets/vendor/niceselect/js/jquery.nice-select.min.js"></script>
-										<!-- nice-select -->
-										<script src="assets/vendor/powerful-calendar/calendar.min.js"></script>
-										<!-- Date picker -->
+	<!-- Dashboard 1 -->
+	<script src="assets/js/dashboard/dashboard-1.js"></script>
+	<script src="assets/vendor/draggable/draggable.js"></script>
 
-										<!-- Vectormap -->
-										<script src="assets/vendor/jqvmap/js/jquery.vmap.min.js"></script>
-										<script src="assets/vendor/jqvmap/js/jquery.vmap.world.js"></script>
-										<script src="assets/vendor/jqvmap/js/jquery.vmap.usa.js"></script>
+	<script src="assets/vendor/datatables/js/jquery.dataTables.min.js"></script>
+	<script src="assets/vendor/datatables/js/dataTables.buttons.min.js"></script>
+	<script src="assets/vendor/datatables/js/buttons.html5.min.js"></script>
+	<script src="assets/vendor/datatables/js/jszip.min.js"></script>
+	<script src="assets/js/plugins-init/datatables.init.min.js"></script>
+	<script src="assets/vendor/tagify/dist/tagify.min.js"></script><!-- tagify -->
+	<script src="assets/vendor/niceselect/js/jquery.nice-select.min.js"></script> <!-- nice-select -->
+	<script src="assets/vendor/powerful-calendar/calendar.min.js"></script> <!-- Date picker -->
 
-										<script src="assets/js/deznav-init.js"></script>
-										<script src="assets/js/custom.js"></script>
+	<!-- Vectormap -->
+	<script src="assets/vendor/jqvmap/js/jquery.vmap.min.js"></script>
+	<script src="assets/vendor/jqvmap/js/jquery.vmap.world.js"></script>
+	<script src="assets/vendor/jqvmap/js/jquery.vmap.usa.js"></script>
 
-										<script>
-
-										</script>
+	<script src="assets/js/deznav-init.js"></script>
+	<script src="assets/js/custom.js"></script>
 
 </body>
 
